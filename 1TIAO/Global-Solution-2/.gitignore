@@ -1,0 +1,63 @@
+# ─── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# ─── Ambiente / Credenciais ────────────────────────────────────────────────────
+.env
+*.pem
+*.key
+credentials
+
+# ─── AWS ───────────────────────────────────────────────────────────────────────
+.aws/
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# ─── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ─── Dados brutos e modelos treinados (muito grandes para git) ─────────────────
+data/raw/**
+!data/raw/**/.gitkeep
+data/solar_images/**
+!data/solar_images/.gitkeep
+*.h5
+*.pt
+*.pth
+*.pkl
+*.joblib
+
+# ─── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ─── IDEs e OS ─────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
