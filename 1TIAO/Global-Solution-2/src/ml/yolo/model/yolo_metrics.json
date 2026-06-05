@@ -1,0 +1,14 @@
+{
+  "map50": 0.8656530421828439,
+  "map50_95": 0.5084589767764961,
+  "precision": 0.8273736873573506,
+  "recall": 0.8181818181818182,
+  "epochs_trained": 30,
+  "model_base": "yolo11n.pt",
+  "classes": [
+    "quiet_sun",
+    "active_region",
+    "sunspot_group"
+  ],
+  "trained_on": "Google Colab T4 GPU"
+}
