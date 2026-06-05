@@ -50,6 +50,9 @@ data/solar_images/**
 *.pkl
 *.joblib
 
+# ─── Artefatos de build Lambda (regeneráveis localmente) ──────────────────────
+*.zip
+
 # ─── Logs ──────────────────────────────────────────────────────────────────────
 *.log
 logs/

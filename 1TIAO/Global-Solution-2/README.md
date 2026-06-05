@@ -16,12 +16,16 @@
 
 ## 👨‍🎓 Integrantes:
 - <a href="https://www.linkedin.com/in/daniel-baião-0b351049/">Daniel Emilio Baião</a>
+- <a href="https://www.linkedin.com/company/inova-fusca">Erik Criscuolo</a>
+- <a href="https://www.linkedin.com/company/inova-fusca">Hugo Rodrigues Carvalho Silva</a>
+- <a href="https://www.linkedin.com/company/inova-fusca">Marcus Vinícius Loureiro Garcia</a> 
+- <a href="https://www.linkedin.com/company/inova-fusca">Sidney William de Paula Dias</a> 
 
 ## 👩‍🏫 Professores:
 ### Tutor(a)
 - <a href="https://www.linkedin.com/in/sabrina-otoni-22525519b/">Sabrina Otoni</a>
 ### Coordenador(a)
-- <a href="https://www.linkedin.com/in/andregodoichiovato/">André Godoi Chiovato</a>
+- <a href="https://www.linkedin.com/company/inova-fusca">André Godoi Chiovato</a>
 
 
 ## 📜 Descrição
