@@ -279,6 +279,12 @@ EventBridge (cron hourly)
 - [ ] `seed.py` carregou dados históricos no PostgreSQL
 - [ ] Query de verificação retorna dados em ambos os bancos
 
+> ⚠ **Gestão de custo:** Após concluir e validar o RDS, executar imediatamente:
+> ```bash
+> aws rds stop-db-instance --db-instance-identifier helios-db
+> ```
+> Religar apenas para as fases que exigirem acesso ao PostgreSQL (Fase 5 seed, Fase 9 dashboard histórico) e para a apresentação final.
+
 ---
 
 ## FASE 5 — Modelo LSTM (Previsão de Índice Kp)
@@ -623,18 +629,132 @@ ESP32/Simulador ─────┤  AWS IoT Core              │
 
 ## Estrutura de Custos AWS (Free Tier)
 
-| Serviço | Limite Free Tier | Uso Estimado no Projeto |
-|---|---|---|
-| Lambda | 1M invocações/mês | ~720/mês (1/hora) ✅ |
-| S3 | 5 GB armazenamento | ~500 MB ✅ |
-| DynamoDB | 25 GB + 25 WCU/RCU | < 1 GB ✅ |
-| RDS (t3.micro) | 750h/mês | ~720h ✅ |
-| API Gateway | 1M chamadas/mês | < 1000 ✅ |
-| SNS | 1M publicações/mês | < 100 ✅ |
-| IoT Core | 500K mensagens/mês | ~2880/mês ✅ |
+| Serviço | Limite Free Tier | Uso Estimado no Projeto | Custo |
+|---|---|---|---|
+| Lambda | 1M invocações/mês | ~720/mês (1/hora) | $0,00 ✅ |
+| EventBridge | 14M eventos/mês | ~720/mês | $0,00 ✅ |
+| S3 | 5 GB storage + 2.000 PUTs | ~50 MB/mês | $0,00 ✅ |
+| DynamoDB on-demand | 25 GB + 25 WCU/RCU | < 1 GB | ~$0,30/mês ✅ |
+| RDS db.t3.micro | 750h/mês free tier | 720h/mês se ligado contínuo | **⚠ ~$15–20/mês** |
+| IoT Core | 500K mensagens/mês | ~2.880/mês | $0,08/mês ✅ |
+| SNS | 1M publicações/mês | < 100 | $0,00 ✅ |
+| API Gateway | 1M chamadas/mês | < 1.000 | $0,00 ✅ |
 
 **Custo estimado extra (fora do free tier):**
-- OpenAI API (gpt-4o-mini): ~$0.05/dia → ~$1.50/mês
+- OpenAI API (gpt-4o-mini): ~$0.01–0.05/boletim → custo total negligível
+- **Atenção principal: RDS PostgreSQL** — desligar quando não estiver em uso (ver rotina abaixo)
+
+---
+
+## Gestão de Custos — Rotinas de Desligamento
+
+### ⚠ RDS PostgreSQL — desligar após cada sessão de trabalho
+
+O RDS é o único serviço com custo real (~$0,67/dia ligado).
+Criar e usar apenas quando necessário; **parar imediatamente após os testes**.
+
+```bash
+# Parar instância RDS (cobra só storage ~$0.10/mês enquanto parada)
+aws rds stop-db-instance --db-instance-identifier helios-db
+
+# Religar antes de usar (leva ~2 min para ficar disponível)
+aws rds start-db-instance --db-instance-identifier helios-db
+
+# Verificar status
+aws rds describe-db-instances \
+  --db-instance-identifier helios-db \
+  --query 'DBInstances[0].DBInstanceStatus' --output text
+```
+
+### Lambda e EventBridge — controle de custo zero
+
+As Lambdas não cobram em standby. Porém, para evitar chamadas desnecessárias à
+NASA/NOAA fora do período de trabalho ativo, pausar a regra EventBridge:
+
+```bash
+# Pausar trigger horário (Lambdas param de ser invocadas automaticamente)
+aws events disable-rule --name helios-hourly-trigger
+
+# Reativar quando retomar o desenvolvimento
+aws events enable-rule --name helios-hourly-trigger
+```
+
+---
+
+## 🔴 Rotina de Descomissionamento Pós-Apresentação
+
+**Data prevista da apresentação:** 2026-06-12
+**Data limite para cleanup:** 2026-06-13
+
+Executar na ordem abaixo para encerrar todos os recursos e preservar o crédito restante.
+
+### Passo 1 — Desativar triggers automáticos
+```bash
+aws events disable-rule --name helios-hourly-trigger
+```
+
+### Passo 2 — Parar (ou deletar) o RDS
+```bash
+# Opção A: parar para preservar dados (continua cobrando storage ~$2/mês)
+aws rds stop-db-instance --db-instance-identifier helios-db
+
+# Opção B: deletar permanentemente (sem custo, sem snapshot)
+aws rds delete-db-instance \
+  --db-instance-identifier helios-db \
+  --skip-final-snapshot
+```
+
+### Passo 3 — Deletar as Lambdas
+```bash
+aws lambda delete-function --function-name helios-ingestion
+aws lambda delete-function --function-name helios-transform
+aws lambda delete-function --function-name helios-predict    # Fase 5
+aws lambda delete-function --function-name helios-cognitive  # Fase 8
+```
+
+### Passo 4 — Deletar a regra EventBridge e seus targets
+```bash
+aws events remove-targets --rule helios-hourly-trigger --ids helios-ingestion-target
+aws events delete-rule --name helios-hourly-trigger
+```
+
+### Passo 5 — Deletar tabelas DynamoDB
+```bash
+aws dynamodb delete-table --table-name helios-kp-realtime
+aws dynamodb delete-table --table-name helios-solar-events  # Fase 4
+```
+
+### Passo 6 — Esvaziar e deletar o bucket S3
+```bash
+# Esvaziar primeiro (S3 não deleta buckets com objetos)
+aws s3 rm s3://helios-solar-data --recursive
+
+# Deletar bucket
+aws s3 rb s3://helios-solar-data
+```
+
+### Passo 7 — Desprovisionar IoT Core (Fase 7)
+```bash
+# Listar e deletar certificados, políticas e things criados
+aws iot list-things --query 'things[*].thingName' --output text
+# Seguir com delete-thing, detach-policy, delete-certificate conforme listado
+```
+
+### Passo 8 — SNS (Fase 8)
+```bash
+aws sns list-topics --query 'Topics[*].TopicArn' --output text
+# Para cada ARN retornado:
+aws sns delete-topic --topic-arn <ARN>
+```
+
+### Verificação final
+```bash
+# Confirmar que não sobrou nada com custo relevante
+aws resourcegroupstaggingapi get-resources \
+  --tag-filters Key=Project,Values=helios \
+  --query 'ResourceTagMappingList[*].ResourceARN' --output table 2>/dev/null || \
+echo "Verificar manualmente: Lambda, RDS, DynamoDB, S3, EventBridge, IoT, SNS"
+```
 
 ---
 
