@@ -38,6 +38,7 @@ credentials
 # ─── Jupyter ───────────────────────────────────────────────────────────────────
 .ipynb_checkpoints/
 *.ipynb
+!src/ml/lstm/helios_lstm_colab.ipynb
 
 # ─── Dados brutos e modelos treinados (muito grandes para git) ─────────────────
 data/raw/**

@@ -1,0 +1,10 @@
+{
+  "window_size": 12,
+  "horizon": 6,
+  "mae_test": 66.76278655542492,
+  "rmse_test": 77.13528045135901,
+  "epochs_trained": 16,
+  "feature": "ssn",
+  "trained_on": "Google Colab (GPU)",
+  "last_n_months": 600
+}
