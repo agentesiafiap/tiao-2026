@@ -33,5 +33,8 @@ paho-mqtt>=2.0
 # OpenAI (Fase 8)
 openai>=1.14
 
+# Banco de dados (Fase 4)
+psycopg2-binary>=2.9
+
 # Utilitários
 tqdm>=4.66

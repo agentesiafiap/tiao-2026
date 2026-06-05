@@ -19,7 +19,6 @@ from decimal import Decimal
 from pathlib import Path
 
 import boto3
-import requests
 
 S3_BUCKET = os.environ.get("S3_BUCKET_NAME", "helios-solar-data")
 AWS_REGION = os.environ.get("AWS_REGION", "us-east-1")
