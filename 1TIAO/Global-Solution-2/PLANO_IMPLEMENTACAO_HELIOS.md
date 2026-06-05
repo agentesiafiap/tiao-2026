@@ -543,12 +543,36 @@ EventBridge (cron hourly)
 7. **Opcional para pódio:** Deploy no Streamlit Community Cloud (gratuito)
 
 **Checklist de conclusão:**
-- [ ] Dashboard abre sem erros
-- [ ] Previsão LSTM visível no gráfico
-- [ ] Imagem solar com detecções YOLO exibida
-- [ ] Dados ESP32 atualizando em tempo real
-- [ ] Pelo menos 1 boletim gerado visível no dashboard
+- [x] Dashboard abre sem erros
+- [x] Previsão LSTM visível no gráfico
+- [x] Imagem solar com detecções YOLO exibida
+- [x] Dados ESP32 atualizando em tempo real
+- [x] Pelo menos 1 boletim gerado visível no dashboard
 - [ ] URL pública do Streamlit Cloud (se aplicável)
+
+### Resultados Reais (2026-06-05)
+
+| Componente | Status | Detalhe |
+|---|---|---|
+| `src/dashboard/app.py` | ✅ | 8 seções: header, ESP32, LSTM, YOLO, mapa, boletins, CME, rodapé |
+| `src/dashboard/data_loader.py` | ✅ | Funções cacheadas (60s→3600s), fallback mock para todas |
+| `src/dashboard/requirements.txt` | ✅ | streamlit, plotly, folium, streamlit-folium, Pillow, autorefresh |
+| Auto-refresh 5 min | ✅ | `st_autorefresh(interval=300_000)` |
+| Série temporal ESP32 | ✅ | Plotly dark, banda ±200 nT, tooltip geo_status |
+| Gráfico LSTM | ✅ | Linha + banda de confiança ±MAE, limiares de risco coloridos |
+| Imagem SDO + YOLO | ✅ | PIL/imagem anotada + tabela de detecções |
+| Mapa auroral global | ✅ | Folium CartoDB dark, 6 zonas de risco + estação BR-001 |
+| Boletins S3 | ✅ | Tabs com últimos 3 boletins, kp_max + source |
+| Histórico CME | ✅ | NASA DONKI API, 30 dias, tabela interativa |
+| Startup test | ✅ | `HTTP 200` em `http://localhost:8501/healthz` |
+
+**Execução:**
+```bash
+cd 1TIAO/Global-Solution-2
+source .venv/bin/activate
+streamlit run src/dashboard/app.py
+# Abre em http://localhost:8501
+```
 
 ---
 
