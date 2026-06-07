@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "author": "grupo 9",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 163.2, "left": 196.84, "attrs": {} },
+    { "type": "wokwi-photoresistor-sensor", "id": "ph", "top": 70.4, "left": -66.4, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "umidity", "top": -18.9, "left": 215.4, "attrs": {} },
+    { "type": "wokwi-relay-module", "id": "irrigation", "top": 249.8, "left": 393.6, "attrs": {} },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "n",
+      "top": 217.4,
+      "left": 9.6,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "p",
+      "top": 284.6,
+      "left": 9.6,
+      "attrs": { "color": "blue", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "k",
+      "top": 351.8,
+      "left": 9.6,
+      "attrs": { "color": "red", "xray": "1" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "esp:3V3", "irrigation:VCC", "white", [ "h0.15", "v-38.4", "h163.2", "v115.2" ] ],
+    [ "irrigation:IN", "esp:17", "blue", [ "h0" ] ],
+    [ "umidity:GND", "esp:GND.2", "black", [ "v28.8", "h67.2", "v67.2" ] ],
+    [ "irrigation:GND", "esp:GND.3", "black", [ "h-67.2", "v-29.2" ] ],
+    [ "umidity:VCC", "esp:3V3", "white", [ "v28.8", "h-48", "v67.2" ] ],
+    [ "umidity:SDA", "esp:21", "orange", [ "v48", "h105.7", "v96" ] ],
+    [ "ph:VCC", "esp:3V3", "white", [ "h57.6", "v105.6" ] ],
+    [ "ph:GND", "esp:GND.1", "black", [ "h48", "v220.4" ] ],
+    [ "ph:AO", "esp:34", "purple", [ "h28.8", "v114.5" ] ],
+    [ "p:2.r", "esp:GND.1", "black", [ "h77", "v9.8" ] ],
+    [ "p:1.r", "esp:14", "blue", [ "h96.2", "v-28.8" ] ],
+    [ "k:2.r", "esp:13", "red", [ "h105.8", "v-57.4", "h19.05" ] ],
+    [ "k:1.r", "esp:GND.1", "black", [ "h77", "v-48" ] ],
+    [ "n:2.r", "esp:32", "green", [ "h0" ] ],
+    [ "n:1.r", "esp:GND.1", "black", [ "v0", "h38.6", "v86.4" ] ]
+  ],
+  "dependencies": {}
+}
