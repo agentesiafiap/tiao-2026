@@ -1,0 +1,201 @@
+id,nome,genero,raca,faixa_etaria,departamento,cargo,habilidades,interesses,disponivel_mentoria
+1,Brenda Alves,Masculino,Branca,26-35,TI,Sênior,"Inovação, Análise de Dados, JavaScript, Comunicação, Python","Sustentabilidade, Saúde Mental",True
+2,Sra. Isabelly Câmara,Feminino,Parda,36-45,Marketing,Júnior,"Mentoria, Marketing Digital, Excel","Sustentabilidade, Inovação",True
+3,Cauã Rocha,Masculino,Parda,26-35,TI,Pleno,"JavaScript, Liderança, Gestão de Projetos, Excel","Sustentabilidade, Tecnologia, Saúde Mental",False
+4,Dra. Aurora Pastor,Feminino,Parda,46-55,RH,Sênior,"JavaScript, Python, Design","Diversidade, Sustentabilidade, Inovação",False
+5,Ana Beatriz Alves,Feminino,Parda,26-35,Vendas,Júnior,"Gestão de Projetos, Excel, JavaScript, SQL","Educação, Inovação, Saúde Mental",False
+6,Henrique da Conceição,Não-binário,Parda,36-45,Vendas,Júnior,"Design, Python, Liderança, Comunicação","Diversidade, Sustentabilidade, Inovação",False
+7,Amanda Novais,Masculino,Parda,26-35,Vendas,Júnior,"Design, Análise de Dados, Gestão de Projetos","Diversidade, Educação, Tecnologia",False
+8,Yago Leão,Não-binário,Branca,26-35,TI,Júnior,"SQL, Gestão de Projetos, Inovação, Comunicação","Educação, Sustentabilidade",False
+9,Pietro Pastor,Feminino,Parda,46-55,TI,Sênior,"Inovação, JavaScript, Análise de Dados, Excel","Saúde Mental, Diversidade, Sustentabilidade",False
+10,André Teixeira,Feminino,Parda,46-55,Vendas,Sênior,"SQL, Análise de Dados, JavaScript, Excel","Saúde Mental, Educação",True
+11,Otávio Fernandes,Feminino,Parda,36-45,TI,Sênior,"Liderança, Mentoria, Python","Sustentabilidade, Diversidade, Educação",True
+12,Eduardo Cunha,Feminino,Parda,18-25,Marketing,Júnior,"Análise de Dados, SQL, Gestão de Projetos","Saúde Mental, Tecnologia",True
+13,Sr. Caleb Garcia,Não-binário,Parda,36-45,RH,Sênior,"Excel, Comunicação, Liderança, Mentoria","Educação, Tecnologia, Sustentabilidade",True
+14,Luiz Henrique Ferreira,Masculino,Parda,26-35,RH,Júnior,"JavaScript, Gestão de Projetos, Python","Inovação, Sustentabilidade",True
+15,Julia Aparecida,Feminino,Branca,26-35,RH,Sênior,"Marketing Digital, Inovação, Mentoria, Design","Tecnologia, Saúde Mental",True
+16,Sra. Zoe Campos,Feminino,Branca,26-35,TI,Sênior,"Gestão de Projetos, Inovação, JavaScript","Sustentabilidade, Tecnologia",False
+17,Anna Liz Novaes,Masculino,Parda,18-25,RH,Pleno,"Mentoria, Design, JavaScript","Tecnologia, Educação",False
+18,Luiz Miguel Oliveira,Não-binário,Parda,46-55,RH,Pleno,"Mentoria, Inovação, Design","Tecnologia, Sustentabilidade",True
+19,Bernardo Aparecida,Não-binário,Branca,36-45,Marketing,Pleno,"Comunicação, Análise de Dados, Mentoria, SQL","Inovação, Diversidade",True
+20,Heloísa Vargas,Feminino,Branca,36-45,RH,Júnior,"Análise de Dados, JavaScript, SQL","Sustentabilidade, Educação",True
+21,Bruno da Conceição,Masculino,Parda,36-45,TI,Sênior,"JavaScript, Comunicação, Marketing Digital, Análise de Dados, Liderança","Diversidade, Inovação",False
+22,Mateus da Mota,Masculino,Parda,26-35,Vendas,Júnior,"Python, Mentoria, Marketing Digital","Educação, Sustentabilidade, Saúde Mental",True
+23,Maria Clara Castro,Masculino,Branca,18-25,RH,Pleno,"Excel, SQL, Mentoria, Análise de Dados, Inovação","Educação, Saúde Mental, Sustentabilidade",False
+24,Dr. Gustavo Henrique Rios,Não-binário,Branca,18-25,TI,Sênior,"Análise de Dados, SQL, Excel, Marketing Digital, Design","Saúde Mental, Diversidade",False
+25,Brayan Pereira,Feminino,Branca,46-55,TI,Júnior,"Gestão de Projetos, Comunicação, Excel, Python, Análise de Dados","Diversidade, Inovação, Saúde Mental",True
+26,Eloá Nascimento,Feminino,Branca,18-25,TI,Sênior,"SQL, Análise de Dados, Python, Liderança, Inovação","Tecnologia, Inovação, Sustentabilidade",True
+27,Srta. Elisa Martins,Feminino,Branca,26-35,TI,Pleno,"Análise de Dados, Comunicação, Marketing Digital, SQL","Inovação, Saúde Mental",True
+28,Júlia Porto,Masculino,Parda,36-45,Marketing,Sênior,"Inovação, Design, Excel, SQL","Saúde Mental, Sustentabilidade",True
+29,Dra. Hellena Rodrigues,Masculino,Parda,26-35,Vendas,Júnior,"Design, Python, Inovação","Tecnologia, Diversidade, Educação",True
+30,Sr. Ian Andrade,Feminino,Branca,56+,Vendas,Júnior,"JavaScript, Excel, SQL, Gestão de Projetos","Sustentabilidade, Saúde Mental, Tecnologia",True
+31,Dr. João Felipe Azevedo,Masculino,Amarela,18-25,RH,Pleno,"Python, Comunicação, Inovação, Análise de Dados, Design","Diversidade, Tecnologia, Sustentabilidade",False
+32,Levi Cunha,Feminino,Branca,46-55,Vendas,Sênior,"Comunicação, Liderança, Inovação, Excel, SQL","Inovação, Tecnologia, Educação",True
+33,Sara Gonçalves,Masculino,Parda,26-35,RH,Pleno,"Marketing Digital, Inovação, Liderança, Mentoria, Análise de Dados","Tecnologia, Inovação, Saúde Mental",True
+34,Natália Casa Grande,Masculino,Parda,36-45,TI,Júnior,"Gestão de Projetos, Excel, Design, Marketing Digital, SQL","Sustentabilidade, Saúde Mental",True
+35,Davi Miguel da Cruz,Feminino,Parda,36-45,Marketing,Pleno,"Comunicação, Design, SQL, Python","Sustentabilidade, Tecnologia",True
+36,Dra. Zoe da Luz,Masculino,Branca,46-55,Marketing,Júnior,"Mentoria, Gestão de Projetos, Análise de Dados","Educação, Saúde Mental, Diversidade",False
+37,Dra. Mariane Pacheco,Feminino,Parda,46-55,Marketing,Pleno,"Excel, Design, Inovação, Análise de Dados, Mentoria","Saúde Mental, Inovação, Diversidade",False
+38,Maria Cecília Câmara,Masculino,Branca,46-55,TI,Júnior,"SQL, Design, Comunicação","Saúde Mental, Inovação, Educação",True
+39,Thomas Monteiro,Masculino,Preta,18-25,Marketing,Pleno,"Marketing Digital, Python, Inovação, Comunicação","Tecnologia, Sustentabilidade, Diversidade",False
+40,Benicio Camargo,Feminino,Parda,36-45,RH,Pleno,"Design, Excel, Comunicação, Mentoria","Sustentabilidade, Tecnologia, Diversidade",True
+41,Emanuel Vieira,Feminino,Parda,56+,TI,Pleno,"Marketing Digital, Inovação, Python, JavaScript, Comunicação","Inovação, Tecnologia",False
+42,Mariana Peixoto,Masculino,Branca,26-35,Marketing,Pleno,"Comunicação, Excel, JavaScript","Tecnologia, Sustentabilidade, Educação",False
+43,Matheus Garcia,Feminino,Parda,36-45,RH,Júnior,"Python, Marketing Digital, SQL","Inovação, Saúde Mental",True
+44,Nina Moura,Feminino,Branca,36-45,Vendas,Júnior,"Marketing Digital, Inovação, JavaScript, SQL, Excel","Sustentabilidade, Educação",True
+45,Yuri Albuquerque,Masculino,Parda,18-25,RH,Júnior,"Inovação, Excel, Marketing Digital, JavaScript","Educação, Sustentabilidade, Diversidade",True
+46,Bruna Rodrigues,Masculino,Parda,18-25,Marketing,Pleno,"JavaScript, Comunicação, Liderança, Mentoria, SQL","Tecnologia, Inovação, Diversidade",False
+47,Juliana Vargas,Feminino,Parda,26-35,RH,Júnior,"Excel, Mentoria, Design, Gestão de Projetos","Educação, Saúde Mental, Tecnologia",False
+48,Manuela Camargo,Feminino,Branca,26-35,Vendas,Pleno,"Excel, Marketing Digital, Inovação","Educação, Sustentabilidade, Inovação",True
+49,Pedro Henrique Castro,Feminino,Parda,36-45,Marketing,Pleno,"Python, JavaScript, Excel","Inovação, Tecnologia, Saúde Mental",False
+50,Agatha Silveira,Feminino,Parda,26-35,Vendas,Pleno,"Inovação, Mentoria, Excel, Marketing Digital, Análise de Dados","Inovação, Sustentabilidade, Saúde Mental",False
+51,Sra. Sarah Teixeira,Masculino,Parda,26-35,Vendas,Júnior,"Design, Excel, Inovação","Diversidade, Inovação",False
+52,Thiago Caldeira,Masculino,Parda,36-45,RH,Sênior,"Mentoria, JavaScript, Python","Educação, Diversidade",False
+53,Letícia Porto,Masculino,Parda,26-35,Marketing,Júnior,"JavaScript, Comunicação, Mentoria, Inovação","Educação, Sustentabilidade, Inovação",True
+54,Fernanda Cassiano,Masculino,Branca,36-45,Marketing,Sênior,"Marketing Digital, Inovação, Design, Análise de Dados, Comunicação","Tecnologia, Saúde Mental, Diversidade",False
+55,Sr. Vitor Hugo Vasconcelos,Feminino,Parda,46-55,RH,Sênior,"Design, Excel, JavaScript, SQL","Inovação, Saúde Mental",False
+56,Agatha Peixoto,Masculino,Parda,26-35,TI,Júnior,"Excel, Inovação, Mentoria","Sustentabilidade, Inovação",False
+57,Dr. Antony Camargo,Masculino,Parda,36-45,Vendas,Júnior,"JavaScript, Python, SQL, Excel, Análise de Dados","Tecnologia, Sustentabilidade",False
+58,Dr. Isaque Araújo,Feminino,Parda,36-45,Marketing,Pleno,"JavaScript, Marketing Digital, Python, Comunicação, Liderança","Educação, Diversidade, Sustentabilidade",True
+59,Bruno Barros,Não-binário,Parda,26-35,TI,Júnior,"Mentoria, Análise de Dados, Inovação","Diversidade, Inovação",False
+60,Sra. Ana Lívia Teixeira,Não-binário,Preta,26-35,Vendas,Sênior,"JavaScript, SQL, Liderança, Comunicação, Mentoria","Diversidade, Tecnologia, Sustentabilidade",False
+61,Carolina Cardoso,Masculino,Branca,36-45,TI,Sênior,"Análise de Dados, Mentoria, Comunicação","Sustentabilidade, Inovação, Diversidade",False
+62,Olívia Novaes,Feminino,Branca,36-45,Vendas,Pleno,"Inovação, Mentoria, JavaScript, Python, Design","Saúde Mental, Inovação, Diversidade",True
+63,João Moura,Masculino,Indígena,46-55,Marketing,Júnior,"Gestão de Projetos, SQL, Mentoria, Excel, Análise de Dados","Tecnologia, Saúde Mental, Educação",True
+64,Mariana Cunha,Masculino,Parda,36-45,RH,Júnior,"Excel, Comunicação, Liderança, Análise de Dados","Diversidade, Sustentabilidade",True
+65,Gabriela Silva,Feminino,Parda,36-45,RH,Pleno,"Análise de Dados, Mentoria, Liderança, Marketing Digital, Comunicação","Tecnologia, Diversidade, Inovação",False
+66,Murilo Rios,Masculino,Parda,18-25,Marketing,Sênior,"Comunicação, Inovação, SQL, Mentoria, Python","Inovação, Educação, Diversidade",True
+67,Maria Fernanda Macedo,Feminino,Preta,36-45,Marketing,Sênior,"SQL, JavaScript, Mentoria, Excel","Diversidade, Educação",False
+68,Milena Campos,Feminino,Parda,46-55,Marketing,Pleno,"Gestão de Projetos, Mentoria, Análise de Dados, Python, JavaScript","Inovação, Diversidade",True
+69,Henry Gabriel Azevedo,Masculino,Branca,36-45,TI,Pleno,"SQL, Excel, Python, Marketing Digital, Liderança","Sustentabilidade, Diversidade",False
+70,Sr. Yuri da Conceição,Masculino,Parda,36-45,RH,Júnior,"SQL, JavaScript, Marketing Digital, Comunicação","Educação, Inovação, Tecnologia",True
+71,Hellena Abreu,Feminino,Preta,36-45,Marketing,Pleno,"Gestão de Projetos, Análise de Dados, SQL","Sustentabilidade, Tecnologia, Diversidade",False
+72,Bento da Conceição,Feminino,Preta,26-35,Marketing,Pleno,"JavaScript, Design, Comunicação, Liderança, Excel","Saúde Mental, Diversidade, Sustentabilidade",False
+73,Arthur Gabriel Farias,Feminino,Parda,36-45,TI,Sênior,"Inovação, Mentoria, Excel, Design","Educação, Diversidade",True
+74,Théo da Costa,Feminino,Parda,36-45,RH,Sênior,"JavaScript, Gestão de Projetos, Python, Excel, Mentoria","Sustentabilidade, Educação",False
+75,Ryan Cunha,Masculino,Branca,36-45,RH,Júnior,"SQL, Análise de Dados, Liderança, Gestão de Projetos, Excel","Inovação, Diversidade",True
+76,Caroline Silveira,Feminino,Preta,18-25,RH,Sênior,"Inovação, Gestão de Projetos, Comunicação, Análise de Dados","Diversidade, Sustentabilidade, Tecnologia",True
+77,Olívia da Cruz,Feminino,Parda,36-45,Marketing,Sênior,"Liderança, JavaScript, Design, Mentoria","Sustentabilidade, Educação",False
+78,Maria Luísa Correia,Feminino,Parda,26-35,Vendas,Sênior,"Comunicação, JavaScript, SQL, Python, Análise de Dados","Diversidade, Tecnologia",True
+79,Calebe Ribeiro,Feminino,Branca,26-35,Marketing,Sênior,"Inovação, SQL, Comunicação","Saúde Mental, Sustentabilidade",False
+80,Maria Lima,Não-binário,Branca,36-45,RH,Pleno,"Mentoria, Design, Liderança, JavaScript, Marketing Digital","Educação, Diversidade, Sustentabilidade",False
+81,Nina Siqueira,Não-binário,Parda,46-55,TI,Sênior,"Design, Gestão de Projetos, Marketing Digital, Python","Sustentabilidade, Diversidade",True
+82,Carlos Eduardo Araújo,Masculino,Parda,26-35,RH,Júnior,"Liderança, SQL, Marketing Digital","Sustentabilidade, Diversidade",True
+83,Maitê Caldeira,Feminino,Branca,46-55,RH,Júnior,"Liderança, Design, Marketing Digital","Diversidade, Sustentabilidade, Inovação",False
+84,Gael Correia,Feminino,Preta,36-45,Marketing,Pleno,"Liderança, Análise de Dados, Marketing Digital","Sustentabilidade, Tecnologia",True
+85,Melissa Carvalho,Feminino,Parda,36-45,Vendas,Pleno,"Gestão de Projetos, Python, Inovação, Mentoria, Comunicação","Tecnologia, Sustentabilidade",False
+86,Emilly da Mota,Masculino,Branca,36-45,TI,Júnior,"Excel, Marketing Digital, Gestão de Projetos, Análise de Dados, Liderança","Tecnologia, Educação, Diversidade",True
+87,Isadora Barbosa,Masculino,Parda,46-55,RH,Pleno,"Mentoria, Design, Comunicação, Liderança, Inovação","Tecnologia, Saúde Mental, Sustentabilidade",False
+88,Beatriz Aragão,Feminino,Branca,26-35,Marketing,Júnior,"JavaScript, Inovação, Gestão de Projetos, Comunicação","Sustentabilidade, Diversidade, Inovação",True
+89,Ágatha Albuquerque,Feminino,Branca,46-55,Marketing,Sênior,"Python, Excel, Marketing Digital, Gestão de Projetos, Liderança","Sustentabilidade, Educação, Inovação",True
+90,Isaac Cavalcante,Masculino,Branca,46-55,Vendas,Júnior,"Excel, Marketing Digital, Design, Comunicação, Python","Educação, Diversidade, Sustentabilidade",True
+91,Raquel Mendes,Não-binário,Branca,26-35,RH,Sênior,"Gestão de Projetos, Comunicação, JavaScript, SQL","Saúde Mental, Sustentabilidade, Educação",True
+92,Murilo Araújo,Feminino,Branca,26-35,Vendas,Sênior,"Marketing Digital, JavaScript, Python, SQL","Inovação, Educação, Sustentabilidade",True
+93,Mateus Abreu,Feminino,Preta,26-35,Vendas,Júnior,"Análise de Dados, JavaScript, Liderança, Comunicação","Sustentabilidade, Diversidade, Tecnologia",True
+94,Julia Viana,Masculino,Parda,18-25,Vendas,Júnior,"SQL, Excel, Gestão de Projetos","Diversidade, Sustentabilidade",True
+95,Laura Lima,Masculino,Branca,36-45,Vendas,Júnior,"Comunicação, Python, Inovação, Gestão de Projetos","Tecnologia, Sustentabilidade, Diversidade",False
+96,Dra. Raquel Cassiano,Feminino,Branca,18-25,TI,Pleno,"SQL, Marketing Digital, Mentoria, Liderança, JavaScript","Tecnologia, Sustentabilidade, Inovação",False
+97,Juan Cunha,Feminino,Branca,26-35,Vendas,Júnior,"Liderança, SQL, JavaScript, Análise de Dados, Marketing Digital","Educação, Saúde Mental, Inovação",True
+98,Vitor Hugo Araújo,Masculino,Branca,26-35,RH,Sênior,"JavaScript, SQL, Mentoria, Marketing Digital","Educação, Saúde Mental",True
+99,Sra. Ana Laura Aragão,Feminino,Parda,26-35,TI,Pleno,"Mentoria, Gestão de Projetos, Excel, Marketing Digital, Python","Diversidade, Educação, Sustentabilidade",False
+100,Pietra Montenegro,Masculino,Branca,26-35,TI,Sênior,"Marketing Digital, Análise de Dados, Comunicação, Mentoria","Educação, Saúde Mental, Sustentabilidade",True
+101,Eduarda Araújo,Masculino,Preta,26-35,TI,Pleno,"JavaScript, Liderança, Inovação, Análise de Dados, SQL","Sustentabilidade, Inovação",True
+102,Anna Liz Cirino,Masculino,Parda,26-35,Vendas,Sênior,"Marketing Digital, Python, Liderança, JavaScript","Diversidade, Sustentabilidade",True
+103,Bernardo Rocha,Feminino,Parda,46-55,RH,Pleno,"JavaScript, Marketing Digital, SQL, Liderança","Diversidade, Tecnologia, Inovação",True
+104,Nathan Campos,Feminino,Branca,18-25,TI,Sênior,"Gestão de Projetos, Comunicação, Análise de Dados, Liderança","Sustentabilidade, Diversidade, Educação",True
+105,Isadora Pacheco,Não-binário,Preta,26-35,RH,Júnior,"JavaScript, Excel, Inovação","Educação, Saúde Mental, Sustentabilidade",False
+106,Ana Cecília Pinto,Feminino,Branca,26-35,RH,Sênior,"Mentoria, Python, Comunicação, Liderança, Design","Tecnologia, Educação",False
+107,Otto Ribeiro,Masculino,Branca,56+,Marketing,Júnior,"Liderança, Gestão de Projetos, Marketing Digital, Mentoria, Análise de Dados","Diversidade, Tecnologia, Educação",True
+108,Stephany Dias,Feminino,Branca,26-35,Vendas,Sênior,"JavaScript, Análise de Dados, Inovação","Diversidade, Sustentabilidade",True
+109,Gustavo Rios,Não-binário,Branca,26-35,RH,Pleno,"Liderança, Python, Comunicação, Gestão de Projetos","Tecnologia, Educação, Diversidade",False
+110,Sra. Isabella da Luz,Masculino,Branca,46-55,Vendas,Júnior,"SQL, Python, Excel, Mentoria","Saúde Mental, Inovação",False
+111,Caroline Rios,Não-binário,Branca,26-35,RH,Sênior,"Inovação, Marketing Digital, Análise de Dados, Comunicação","Sustentabilidade, Diversidade",True
+112,Letícia Marques,Masculino,Branca,36-45,Marketing,Júnior,"JavaScript, Mentoria, Marketing Digital, Análise de Dados","Sustentabilidade, Educação",True
+113,Sr. Anthony Marques,Masculino,Branca,26-35,Marketing,Júnior,"Gestão de Projetos, Inovação, JavaScript, Análise de Dados, Liderança","Sustentabilidade, Educação",True
+114,Beatriz Barbosa,Masculino,Branca,26-35,TI,Pleno,"JavaScript, Liderança, Design, Inovação","Educação, Diversidade, Inovação",True
+115,Hadassa Montenegro,Feminino,Branca,36-45,Marketing,Sênior,"Mentoria, Gestão de Projetos, SQL, Marketing Digital","Sustentabilidade, Tecnologia, Saúde Mental",True
+116,Davi Lucca Ferreira,Feminino,Parda,26-35,Vendas,Sênior,"Comunicação, Análise de Dados, Mentoria","Diversidade, Sustentabilidade",True
+117,Joaquim Freitas,Feminino,Branca,36-45,Vendas,Júnior,"Liderança, Comunicação, Gestão de Projetos, Mentoria","Tecnologia, Diversidade, Inovação",False
+118,Emanuel Macedo,Masculino,Parda,26-35,TI,Sênior,"Comunicação, JavaScript, Inovação, SQL, Excel","Diversidade, Sustentabilidade, Educação",True
+119,Liz Pimenta,Masculino,Parda,26-35,Marketing,Pleno,"Mentoria, Python, Liderança, Comunicação, Excel","Saúde Mental, Sustentabilidade, Educação",True
+120,Vitória Albuquerque,Não-binário,Branca,36-45,Marketing,Júnior,"SQL, JavaScript, Design, Liderança","Diversidade, Tecnologia",True
+121,Letícia Ribeiro,Feminino,Parda,26-35,TI,Sênior,"SQL, Análise de Dados, Liderança, Comunicação, Marketing Digital","Saúde Mental, Diversidade",True
+122,Davi Luiz da Luz,Feminino,Preta,26-35,TI,Pleno,"Excel, Mentoria, Design","Educação, Diversidade",False
+123,Cauê Souza,Masculino,Branca,26-35,Marketing,Júnior,"Gestão de Projetos, Liderança, Inovação","Saúde Mental, Sustentabilidade",True
+124,Daniela da Mata,Feminino,Parda,36-45,Vendas,Sênior,"Design, JavaScript, Inovação, SQL","Inovação, Tecnologia",True
+125,Gustavo Henrique Silva,Feminino,Amarela,18-25,TI,Júnior,"Excel, Comunicação, Mentoria, Análise de Dados","Tecnologia, Saúde Mental, Sustentabilidade",True
+126,Sr. João Montenegro,Masculino,Parda,26-35,RH,Júnior,"Comunicação, Análise de Dados, Python, JavaScript","Educação, Inovação",True
+127,Isis Aragão,Masculino,Parda,26-35,Vendas,Júnior,"Excel, Design, Análise de Dados","Diversidade, Inovação",False
+128,Otávio da Mota,Feminino,Branca,46-55,RH,Júnior,"Gestão de Projetos, Marketing Digital, Inovação, Liderança, Python","Sustentabilidade, Saúde Mental",True
+129,Alexandre Farias,Feminino,Parda,26-35,TI,Pleno,"Gestão de Projetos, Análise de Dados, Excel, Marketing Digital, Mentoria","Inovação, Tecnologia, Diversidade",False
+130,João Castro,Masculino,Branca,26-35,Vendas,Sênior,"SQL, Liderança, Gestão de Projetos","Saúde Mental, Diversidade",False
+131,Sra. Mariane Novais,Feminino,Branca,26-35,TI,Pleno,"Mentoria, Design, SQL","Sustentabilidade, Saúde Mental, Diversidade",True
+132,Daniel Barbosa,Masculino,Parda,26-35,Vendas,Sênior,"Inovação, Liderança, Design, SQL, Mentoria","Educação, Tecnologia, Saúde Mental",False
+133,Srta. Ísis Andrade,Masculino,Branca,26-35,RH,Júnior,"Marketing Digital, Liderança, Python, Inovação","Diversidade, Tecnologia",False
+134,Sr. Pedro Cardoso,Feminino,Preta,46-55,Vendas,Pleno,"Liderança, Python, Comunicação, Gestão de Projetos","Educação, Saúde Mental",True
+135,Leandro Fonseca,Masculino,Preta,36-45,Vendas,Sênior,"Gestão de Projetos, Marketing Digital, JavaScript, SQL","Sustentabilidade, Tecnologia, Diversidade",True
+136,Luiz Henrique Costela,Feminino,Branca,36-45,TI,Júnior,"Python, SQL, Liderança, Mentoria, Análise de Dados","Inovação, Educação, Saúde Mental",True
+137,Isadora Rios,Masculino,Indígena,36-45,Vendas,Sênior,"Liderança, Análise de Dados, Gestão de Projetos, Marketing Digital, Mentoria","Saúde Mental, Educação, Diversidade",False
+138,Luiz Gustavo Vasconcelos,Masculino,Branca,26-35,Vendas,Sênior,"Inovação, Gestão de Projetos, Python","Educação, Tecnologia, Diversidade",True
+139,Maria Luísa Pinto,Feminino,Branca,36-45,Marketing,Júnior,"Gestão de Projetos, Design, Python, JavaScript, Inovação","Sustentabilidade, Tecnologia",True
+140,Srta. Isabela Castro,Masculino,Branca,36-45,Marketing,Sênior,"Inovação, Python, SQL, Análise de Dados","Inovação, Educação",False
+141,Noah Alves,Feminino,Branca,26-35,Vendas,Sênior,"Liderança, Gestão de Projetos, Excel, Mentoria, Design","Inovação, Diversidade, Educação",True
+142,Lucas Gabriel Viana,Feminino,Parda,26-35,Marketing,Pleno,"Análise de Dados, Excel, Gestão de Projetos, JavaScript","Educação, Saúde Mental, Tecnologia",False
+143,Isadora da Mata,Masculino,Branca,36-45,Vendas,Pleno,"Gestão de Projetos, Excel, Mentoria, Design","Inovação, Educação",False
+144,Cauê Garcia,Masculino,Parda,36-45,RH,Júnior,"Gestão de Projetos, Análise de Dados, Design, Marketing Digital, Python","Sustentabilidade, Tecnologia, Diversidade",True
+145,Ravy Câmara,Masculino,Parda,46-55,Marketing,Sênior,"Mentoria, Inovação, Design","Diversidade, Saúde Mental",False
+146,Raul Ferreira,Não-binário,Branca,36-45,TI,Júnior,"Comunicação, SQL, Python, Inovação, Mentoria","Inovação, Diversidade",True
+147,Ian Câmara,Feminino,Branca,56+,Vendas,Pleno,"Gestão de Projetos, Análise de Dados, Inovação","Tecnologia, Inovação, Saúde Mental",False
+148,Gael Guerra,Masculino,Parda,36-45,RH,Júnior,"Inovação, Liderança, Excel","Educação, Inovação",True
+149,Dr. Bernardo Vargas,Feminino,Preta,18-25,TI,Júnior,"SQL, Mentoria, Liderança, Design, Python","Diversidade, Tecnologia, Inovação",True
+150,Luiz Fernando Ramos,Masculino,Parda,18-25,Vendas,Sênior,"Design, Python, JavaScript, Mentoria","Diversidade, Inovação, Tecnologia",False
+151,Maria Liz Rocha,Feminino,Parda,26-35,RH,Júnior,"SQL, Mentoria, Inovação, Gestão de Projetos, Liderança","Tecnologia, Educação",False
+152,Luísa Alves,Feminino,Parda,36-45,TI,Sênior,"Mentoria, Análise de Dados, Liderança, JavaScript, Gestão de Projetos","Sustentabilidade, Educação",True
+153,José Pedro Cavalcanti,Masculino,Parda,26-35,RH,Sênior,"Marketing Digital, Mentoria, JavaScript, Análise de Dados, Gestão de Projetos","Sustentabilidade, Tecnologia",True
+154,Julia Andrade,Feminino,Branca,26-35,Vendas,Sênior,"Python, Comunicação, Excel, Inovação, Design","Educação, Sustentabilidade, Saúde Mental",False
+155,Pedro Henrique Ferreira,Feminino,Branca,46-55,Marketing,Júnior,"Excel, Comunicação, SQL, Marketing Digital","Saúde Mental, Tecnologia",True
+156,Sra. Maya Pereira,Feminino,Parda,26-35,RH,Sênior,"Liderança, JavaScript, SQL, Análise de Dados","Tecnologia, Educação, Inovação",True
+157,Bruna Gomes,Não-binário,Preta,36-45,Marketing,Sênior,"Comunicação, Design, Gestão de Projetos","Tecnologia, Diversidade",True
+158,Esther da Cunha,Não-binário,Parda,18-25,Marketing,Sênior,"Python, Design, Gestão de Projetos, JavaScript","Sustentabilidade, Educação",True
+159,Pedro Henrique Abreu,Masculino,Branca,26-35,RH,Júnior,"SQL, Análise de Dados, Excel, Design","Saúde Mental, Educação",True
+160,Zoe Rodrigues,Masculino,Parda,56+,RH,Pleno,"Excel, Inovação, Python, Análise de Dados, SQL","Saúde Mental, Tecnologia, Educação",False
+161,Dra. Fernanda Fonseca,Feminino,Branca,26-35,RH,Pleno,"Comunicação, SQL, Análise de Dados, Mentoria","Inovação, Saúde Mental, Diversidade",True
+162,Ana Lívia Rios,Feminino,Parda,36-45,RH,Pleno,"Design, Excel, Inovação, Liderança","Saúde Mental, Sustentabilidade",False
+163,Dr. Davi Silveira,Feminino,Parda,18-25,Marketing,Sênior,"Marketing Digital, Inovação, Python, JavaScript","Inovação, Educação",True
+164,Thiago das Neves,Feminino,Branca,56+,TI,Júnior,"Design, JavaScript, Mentoria, Inovação","Saúde Mental, Educação",True
+165,Maria Luísa Duarte,Feminino,Parda,26-35,Vendas,Pleno,"Excel, Liderança, Análise de Dados, Mentoria","Tecnologia, Sustentabilidade",False
+166,Laís Novaes,Masculino,Branca,36-45,RH,Sênior,"SQL, Python, Excel, Análise de Dados","Educação, Saúde Mental",True
+167,Gael Leão,Masculino,Branca,36-45,RH,Pleno,"Análise de Dados, Gestão de Projetos, Liderança, Excel","Tecnologia, Saúde Mental",True
+168,Maria Helena Rocha,Masculino,Parda,26-35,TI,Sênior,"Python, JavaScript, Inovação","Sustentabilidade, Tecnologia, Inovação",True
+169,Srta. Liz Guerra,Masculino,Preta,26-35,Marketing,Sênior,"Mentoria, Python, Gestão de Projetos","Educação, Saúde Mental",True
+170,Agatha da Rosa,Feminino,Branca,56+,TI,Sênior,"Inovação, Gestão de Projetos, Comunicação","Inovação, Sustentabilidade",True
+171,Gustavo Henrique Lopes,Masculino,Parda,26-35,Vendas,Pleno,"Comunicação, JavaScript, Liderança, Inovação, Mentoria","Educação, Inovação",True
+172,Luna Martins,Feminino,Parda,36-45,TI,Pleno,"Comunicação, Inovação, Análise de Dados, Mentoria","Sustentabilidade, Saúde Mental",True
+173,Melina Rocha,Feminino,Parda,26-35,TI,Sênior,"Python, Design, Gestão de Projetos","Saúde Mental, Educação, Tecnologia",True
+174,Thomas Melo,Feminino,Branca,36-45,TI,Júnior,"Liderança, Python, Design","Educação, Inovação",True
+175,Srta. Antonella da Paz,Masculino,Branca,46-55,Marketing,Sênior,"Análise de Dados, Liderança, Comunicação","Saúde Mental, Inovação, Sustentabilidade",False
+176,Lívia Borges,Masculino,Parda,26-35,Marketing,Pleno,"Python, Gestão de Projetos, Excel","Tecnologia, Saúde Mental",True
+177,Leonardo Câmara,Masculino,Parda,36-45,TI,Sênior,"Excel, Design, JavaScript, Marketing Digital","Diversidade, Inovação, Tecnologia",True
+178,Diogo Alves,Masculino,Branca,18-25,Vendas,Pleno,"Liderança, Excel, JavaScript, SQL, Marketing Digital","Inovação, Tecnologia, Educação",True
+179,Joaquim Melo,Masculino,Parda,36-45,Vendas,Pleno,"Python, Excel, Comunicação","Tecnologia, Sustentabilidade",False
+180,Ana Sophia Marques,Feminino,Branca,26-35,Vendas,Pleno,"SQL, JavaScript, Inovação, Comunicação, Excel","Tecnologia, Diversidade",True
+181,Evelyn Silva,Masculino,Branca,36-45,RH,Pleno,"JavaScript, SQL, Excel","Sustentabilidade, Tecnologia, Diversidade",False
+182,Sra. Sabrina Guerra,Masculino,Parda,46-55,RH,Pleno,"Liderança, Marketing Digital, Design, Mentoria","Diversidade, Inovação, Tecnologia",True
+183,Diogo Rezende,Não-binário,Parda,26-35,Vendas,Pleno,"Liderança, JavaScript, Marketing Digital, Design","Educação, Saúde Mental, Inovação",True
+184,Srta. Bianca Vasconcelos,Não-binário,Branca,36-45,TI,Pleno,"Gestão de Projetos, Mentoria, SQL, Excel, Design","Diversidade, Inovação, Tecnologia",False
+185,Hellena Cavalcanti,Não-binário,Preta,26-35,Marketing,Sênior,"Python, Liderança, Análise de Dados","Educação, Sustentabilidade, Saúde Mental",False
+186,Dra. Nicole Aragão,Masculino,Parda,36-45,Marketing,Pleno,"Comunicação, JavaScript, Python, Gestão de Projetos, Excel","Inovação, Educação, Saúde Mental",False
+187,Isadora Campos,Feminino,Parda,36-45,RH,Pleno,"Python, Mentoria, JavaScript, Excel","Tecnologia, Sustentabilidade, Educação",True
+188,Catarina Martins,Masculino,Parda,36-45,Vendas,Pleno,"JavaScript, Mentoria, Gestão de Projetos, Liderança","Sustentabilidade, Diversidade, Saúde Mental",True
+189,Vitória Novais,Feminino,Parda,26-35,RH,Sênior,"SQL, Análise de Dados, Inovação","Diversidade, Educação, Tecnologia",False
+190,Luiza Sá,Feminino,Branca,36-45,Marketing,Júnior,"Inovação, Marketing Digital, Design","Tecnologia, Educação, Saúde Mental",False
+191,Sofia Lima,Masculino,Parda,46-55,TI,Sênior,"JavaScript, Análise de Dados, SQL","Diversidade, Saúde Mental",True
+192,Melissa Castro,Masculino,Parda,36-45,Vendas,Sênior,"Comunicação, Marketing Digital, Inovação, JavaScript","Diversidade, Saúde Mental",True
+193,Sra. Milena da Luz,Feminino,Parda,26-35,TI,Sênior,"SQL, Liderança, JavaScript, Design, Excel","Sustentabilidade, Inovação",False
+194,João Guilherme Vargas,Feminino,Branca,18-25,Marketing,Pleno,"SQL, Mentoria, Análise de Dados, Inovação, Marketing Digital","Tecnologia, Diversidade",False
+195,Raquel Pires,Feminino,Parda,46-55,TI,Pleno,"SQL, Design, Comunicação","Educação, Saúde Mental, Tecnologia",False
+196,João Guilherme Macedo,Masculino,Parda,26-35,TI,Sênior,"Python, Design, Excel, Inovação, Marketing Digital","Inovação, Educação, Diversidade",True
+197,João Pedro da Costa,Feminino,Branca,18-25,Vendas,Sênior,"Python, Mentoria, Análise de Dados, Design","Tecnologia, Sustentabilidade, Inovação",False
+198,Lucas Gabriel Dias,Masculino,Parda,18-25,TI,Júnior,"Design, Marketing Digital, Liderança","Saúde Mental, Educação, Tecnologia",True
+199,Anna Liz Carvalho,Feminino,Parda,46-55,Vendas,Sênior,"Excel, Marketing Digital, Análise de Dados, SQL, Liderança","Saúde Mental, Diversidade",False
+200,Igor Gomes,Não-binário,Preta,46-55,TI,Júnior,"Comunicação, Python, Excel, SQL, Análise de Dados","Inovação, Saúde Mental, Diversidade",True
