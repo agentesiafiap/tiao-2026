@@ -1,0 +1,33 @@
+# --- Interface e Dados (Hub Central) ---
+streamlit
+pandas
+numpy
+matplotlib
+seaborn
+
+# --- Banco de Dados (Fase 3) ---
+oracledb
+
+# --- Machine Learning (Fase 4) ---
+scikit-learn
+joblib
+
+# --- Cloud e Mensageria (Fase 5) ---
+boto3
+
+# --- Visão Computacional (Fase 6) ---
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+requests>=2.28.1
+urllib3>=1.26.13
+torch
+torchvision
+opencv-python-headless
+ultralytics
+tqdm
+pyyaml
+requests
+psutil
+
+# --- Segurança e Variáveis de Ambiente (Recomendado) ---
+python-dotenv

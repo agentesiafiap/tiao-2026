@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  farmtech-hub:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: farmtech_dashboard_x86
+    platform: linux/amd64
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env  # Puxa suas senhas do Oracle e AWS automaticamente
+    volumes:
+      # Mantém os arquivos salvos pelo Streamlit (como os CSVs) no seu computador
+      - ./data:/app/data
