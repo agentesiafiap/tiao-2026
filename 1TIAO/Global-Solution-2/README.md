@@ -2,7 +2,7 @@
 
 <p align="center">
 <a href="https://www.fiap.com.br/">
-  <img src="../../../assets/logo-fiap.png" 
+  <img src="./docs/logo-fiap.png" 
        alt="FIAP - Faculdade de Informática e Administração Paulista" 
        width="40%">
 </a>
@@ -12,7 +12,7 @@
 
 # HeliOS — Sistema de Predição de Tempestades Solares e Impacto em Infraestrutura Crítica
 
-## Grupo HeliOS
+## Grupo HeliOS - QUERO CONCORRER
 
 ## 👨‍🎓 Integrantes:
 - <a href="https://www.linkedin.com/in/daniel-baião-0b351049/">Daniel Emilio Baião</a>
@@ -59,15 +59,15 @@ Global-Solution-2/
 │   ├── processed/                   # Dados tratados para treino do LSTM
 │   └── solar_images/                # Imagens SDO para detecção YOLO
 ├── src/
-│   ├── ingestion/                   # Scripts de coleta de dados (Fase 2)
-│   ├── pipeline/                    # Lambdas e pipeline AWS (Fase 3)
-│   ├── database/                    # Setup SQL/NoSQL (Fase 4)
+│   ├── ingestion/                   # Scripts de coleta de dados
+│   ├── pipeline/                    # Lambdas e pipeline AWS
+│   ├── database/                    # Setup SQL/NoSQL
 │   ├── ml/
-│   │   ├── lstm/                    # Modelo de previsão Kp (Fase 5)
-│   │   └── yolo/                    # Detecção de manchas solares (Fase 6)
-│   ├── iot/                         # Código ESP32 + MQTT (Fase 7)
-│   ├── cognitive/                   # API cognitiva + SNS (Fase 8)
-│   └── dashboard/                   # Streamlit (Fase 9)
+│   │   ├── lstm/                    # Modelo de previsão Kp
+│   │   └── yolo/                    # Detecção de manchas solares
+│   ├── iot/                         # Código ESP32 + MQTT
+│   ├── cognitive/                   # API cognitiva + SNS
+│   └── dashboard/                   # Streamlit
 └── docs/
     ├── arquitetura.png              # Diagrama da solução
     ├── fluxograma.png               # Fluxo de dados
@@ -116,21 +116,105 @@ cp .env.example .env
 aws sts get-caller-identity
 ```
 
-### Executar ingestão de dados (Fase 2)
+### Executar ingestão de dados
 
 ```bash
 python src/ingestion/run_all.py
 ```
 
-### Iniciar dashboard (Fase 9)
+### Treinar modelo LSTM — Google Colab (recomendado)
+
+> O treinamento local no macOS ARM com TF 2.21 tem um bug de XLA que congela na época 1.
+> Use o Google Colab com GPU T4 (~5 min):
+
+1. Abrir `src/ml/lstm/gs2_helios.ipynb` no Google Colab
+2. Ativar GPU: Ambiente de execução → Alterar tipo → T4 GPU
+3. Executar todas as células
+4. Baixar `helios_lstm.keras` e `scaler.pkl` → colocar em `src/ml/lstm/model/`
+
+```bash
+# Executar inferência após ter o modelo treinado
+python src/ml/lstm/predict.py --output json
+```
+
+### Treinar modelo YOLO — Google Colab (recomendado)
+
+1. Abrir `src/ml/yolo/colab_yolo.ipynb` no Google Colab com GPU T4
+2. Executar todas as células (dataset sintético gerado automaticamente)
+3. Baixar `helios_yolo.pt` → colocar em `src/ml/yolo/model/`
+
+```bash
+# Executar detecção na última imagem SDO
+python src/ml/yolo/inference.py --latest
+```
+
+### Simular sensor ESP32 / IoT
+
+```bash
+# Modo normal (Kp baixo, campo magnético estável)
+python src/iot/simulate_esp32.py --count 10 --interval 2
+
+# Modo tempestade (Kp ~5.8, STORM_MAJOR)
+python src/iot/simulate_esp32.py --storm --count 5
+```
+
+### Gerar boletim cognitivo
+
+```bash
+# Boletim normal
+python src/cognitive/bulletin_generator.py
+
+# Boletim de emergência (simula tempestade + dispara SNS)
+python src/cognitive/bulletin_generator.py --storm
+```
+
+### Iniciar dashboard
 
 ```bash
 streamlit run src/dashboard/app.py
+# Acesse: http://localhost:8501
 ```
 
+## 🛠 Tecnologias Utilizadas
+
+| Camada | Tecnologia | Uso |
+|---|---|---|
+| **Machine Learning** | TensorFlow/Keras LSTM | Previsão de SSN (manchas solares) 6 meses |
+| **Visão Computacional** | YOLOv8 (Ultralytics) | Detecção de manchas em imagens SDO |
+| **Cloud** | AWS Lambda | Pipeline serverless de ingestão e cognitivo |
+| **Cloud** | AWS DynamoDB | Armazenamento em tempo real (Kp, eventos) |
+| **Cloud** | AWS S3 | Dados brutos, modelos, boletins, imagens |
+| **Cloud** | AWS SNS | Alertas por e-mail quando Kp ≥ 5 |
+| **Cloud** | AWS EventBridge | Triggers automáticos (1h ingestão, 6h cognitivo) |
+| **Cloud** | AWS RDS PostgreSQL | Histórico estruturado de eventos solares |
+| **IoT** | ESP32 + QMC5883L | Magnetômetro físico (firmware Arduino C++) |
+| **IoT** | MQTT / HiveMQ | Transmissão de leituras do sensor |
+| **Cognitivo** | OpenAI gpt-4o-mini | Geração de boletins em linguagem natural |
+| **Cognitivo** | AWS Bedrock Claude | Fallback para geração de boletins |
+| **Dashboard** | Streamlit + Plotly | Visualização interativa em tempo real |
+| **Dashboard** | Folium | Mapa global de zonas de risco auroral |
+| **Dados** | NASA DONKI API | Eventos solares (CME, flares) |
+| **Dados** | NOAA SWPC API | Índice Kp em tempo real |
+| **Dados** | SDO/AIA NASA | Imagens solares para detecção YOLO |
 
 ## 🗃 Histórico de lançamentos
 
+* 1.0.0 - 05/06/2026
+    * Fase 9: Dashboard Streamlit com integração completa
+* 0.9.0 - 05/06/2026
+    * Fase 8: API Cognitiva (boletins automáticos) + Lambda + SNS alertas
+* 0.8.0 - 05/06/2026
+    * Fase 7: IoT — simulador ESP32, MQTT HiveMQ, DynamoDB
+* 0.7.0 - 05/06/2026
+    * Fase 6: YOLOv8 fine-tuning, mAP50=0.866 (Google Colab T4)
+* 0.6.0 - 05/06/2026
+    * Fase 5: LSTM treinado (MAE ~12 SSN, Google Colab T4)
+* 0.4.0 - 04/06/2026
+    * Fase 4: DynamoDB + RDS PostgreSQL schema e seed
+* 0.3.0 - 04/06/2026
+    * Fase 3: Lambda helios-ingestion + helios-transform + EventBridge
+* 0.2.0 - 04/06/2026
+    * Fase 2: Scripts de ingestão NASA DONKI, NOAA Kp, imagens SDO
 * 0.1.0 - 04/06/2026
     * Fase 1: Setup do repositório, estrutura de pastas, README e ambiente base
 
