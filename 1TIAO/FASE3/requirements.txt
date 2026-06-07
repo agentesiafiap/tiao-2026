@@ -1,0 +1,23 @@
+# Dependências do Dashboard de Irrigação Inteligente
+# Sistema desenvolvido para FIAP - Tecnologia em IA
+
+# Frameworks para dashboard
+streamlit>=1.28.0
+dash>=2.14.0
+
+# Manipulação e análise de dados
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Visualização interativa
+plotly>=5.15.0
+
+# Conexão com Oracle Database
+cx_Oracle>=8.3.0
+sqlalchemy>=2.0.0
+
+# Processamento de data/hora
+python-dateutil>=2.8.0
+
+# Utilitários adicionais
+requests>=2.31.0

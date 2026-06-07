@@ -1,0 +1,127 @@
+-- ===============================================
+-- SCRIPTS DE ANÁLISE DOS DADOS DE IRRIGAÇÃO
+-- Sistema de Irrigação Inteligente - Fase 3
+-- ===============================================
+
+-- CONSULTA 1: Visualizar todos os dados
+-- Comando básico para verificar se a importação foi bem-sucedida
+SELECT * FROM HISTORICO2024;
+
+-- CONSULTA 2: Contagem total de registros
+-- Verifica quantos registros foram importados
+SELECT COUNT(*) AS TOTAL_REGISTROS 
+FROM HISTORICO2024;
+
+-- CONSULTA 3: Registros mais recentes
+-- Mostra os 10 registros mais recentes baseados no timestamp
+SELECT * FROM HISTORICO2024 
+ORDER BY TIMESTAMP DESC 
+FETCH FIRST 10 ROWS ONLY;
+
+-- CONSULTA 4: Análise de umidade baixa
+-- Identifica quando o sistema detectou umidade baixa
+SELECT 
+    TO_CHAR(TO_DATE('1970-01-01', 'YYYY-MM-DD') + TIMESTAMP/86400, 'DD/MM/YYYY HH24:MI') AS DATA_HORA,
+    UMIDADE_DHT,
+    UMIDADE_BAIXA,
+    RELAY_STATUS
+FROM HISTORICO2024 
+WHERE UMIDADE_BAIXA = 1
+ORDER BY TIMESTAMP DESC;
+
+-- CONSULTA 5: Quando a irrigação foi ativada
+-- Mostra todos os momentos em que o relay foi ativado
+SELECT 
+    TO_CHAR(TO_DATE('1970-01-01', 'YYYY-MM-DD') + TIMESTAMP/86400, 'DD/MM/YYYY HH24:MI') AS DATA_HORA,
+    UMIDADE_DHT,
+    RELAY_STATUS,
+    UMIDADE_BAIXA,
+    NPK_OK,
+    PH_OK
+FROM HISTORICO2024 
+WHERE RELAY_STATUS = 1
+ORDER BY TIMESTAMP;
+
+-- CONSULTA 6: Status dos nutrientes NPK
+-- Analisa a presença dos nutrientes N, P, K
+SELECT 
+    N_PRESENTE,
+    P_PRESENTE, 
+    K_PRESENTE,
+    COUNT(*) AS FREQUENCIA,
+    ROUND(COUNT(*) * 100.0 / (SELECT COUNT(*) FROM HISTORICO2024), 2) AS PERCENTUAL
+FROM HISTORICO2024 
+GROUP BY N_PRESENTE, P_PRESENTE, K_PRESENTE
+ORDER BY FREQUENCIA DESC;
+
+-- CONSULTA 7: Estatísticas de umidade
+-- Calcula média, mínimo e máximo da umidade DHT
+SELECT 
+    ROUND(AVG(UMIDADE_DHT), 2) AS MEDIA_UMIDADE,
+    ROUND(MIN(UMIDADE_DHT), 2) AS MIN_UMIDADE,
+    ROUND(MAX(UMIDADE_DHT), 2) AS MAX_UMIDADE,
+    ROUND(STDDEV(UMIDADE_DHT), 2) AS DESVIO_PADRAO
+FROM HISTORICO2024;
+
+-- CONSULTA 8: Análise do sensor LDR (Luminosidade)
+-- Estatísticas do sensor de luz
+SELECT 
+    ROUND(AVG(LDR_VALOR), 2) AS MEDIA_LDR,
+    MIN(LDR_VALOR) AS MIN_LDR,
+    MAX(LDR_VALOR) AS MAX_LDR,
+    ROUND(STDDEV(LDR_VALOR), 2) AS DESVIO_PADRAO_LDR
+FROM HISTORICO2024;
+
+-- CONSULTA 9: Contagem de ativações do relay
+-- Quantas vezes o sistema de irrigação foi ativado
+SELECT 
+    RELAY_STATUS,
+    COUNT(*) AS TOTAL_REGISTROS,
+    ROUND(COUNT(*) * 100.0 / (SELECT COUNT(*) FROM HISTORICO2024), 2) AS PERCENTUAL
+FROM HISTORICO2024 
+GROUP BY RELAY_STATUS;
+
+-- CONSULTA 10: Correlação entre umidade e ativação do relay
+-- Verifica a relação entre umidade baixa e ativação da irrigação
+SELECT 
+    UMIDADE_BAIXA,
+    RELAY_STATUS,
+    COUNT(*) AS OCORRENCIAS
+FROM HISTORICO2024 
+GROUP BY UMIDADE_BAIXA, RELAY_STATUS
+ORDER BY UMIDADE_BAIXA, RELAY_STATUS;
+
+-- CONSULTA 11: Status geral dos sistemas
+-- Visão geral do funcionamento de todos os componentes
+SELECT 
+    'Status NPK OK' AS COMPONENTE,
+    SUM(CASE WHEN NPK_OK = 1 THEN 1 ELSE 0 END) AS FUNCIONANDO,
+    SUM(CASE WHEN NPK_OK = 0 THEN 1 ELSE 0 END) AS COM_PROBLEMA,
+    ROUND(SUM(CASE WHEN NPK_OK = 1 THEN 1 ELSE 0 END) * 100.0 / COUNT(*), 2) AS PERCENTUAL_OK
+FROM HISTORICO2024
+UNION ALL
+SELECT 
+    'Status PH OK' AS COMPONENTE,
+    SUM(CASE WHEN PH_OK = 1 THEN 1 ELSE 0 END) AS FUNCIONANDO,
+    SUM(CASE WHEN PH_OK = 0 THEN 1 ELSE 0 END) AS COM_PROBLEMA,
+    ROUND(SUM(CASE WHEN PH_OK = 1 THEN 1 ELSE 0 END) * 100.0 / COUNT(*), 2) AS PERCENTUAL_OK
+FROM HISTORICO2024
+UNION ALL
+SELECT 
+    'Bloqueio Externo' AS COMPONENTE,
+    SUM(CASE WHEN BLOQUEIO_EXTERNO = 0 THEN 1 ELSE 0 END) AS FUNCIONANDO,
+    SUM(CASE WHEN BLOQUEIO_EXTERNO = 1 THEN 1 ELSE 0 END) AS COM_PROBLEMA,
+    ROUND(SUM(CASE WHEN BLOQUEIO_EXTERNO = 0 THEN 1 ELSE 0 END) * 100.0 / COUNT(*), 2) AS PERCENTUAL_OK
+FROM HISTORICO2024;
+
+-- CONSULTA 12: Relatório de eficiência do sistema
+-- Análise da eficiência do sistema de irrigação
+SELECT 
+    'Resumo Executivo do Sistema de Irrigação' AS RELATORIO,
+    (SELECT COUNT(*) FROM HISTORICO2024) AS TOTAL_MEDICOES,
+    (SELECT COUNT(*) FROM HISTORICO2024 WHERE RELAY_STATUS = 1) AS TOTAL_ATIVACOES,
+    ROUND((SELECT COUNT(*) FROM HISTORICO2024 WHERE RELAY_STATUS = 1) * 100.0 / 
+          (SELECT COUNT(*) FROM HISTORICO2024), 2) AS PERCENTUAL_ATIVACAO,
+    (SELECT ROUND(AVG(UMIDADE_DHT), 2) FROM HISTORICO2024) AS UMIDADE_MEDIA_GERAL,
+    (SELECT COUNT(*) FROM HISTORICO2024 WHERE UMIDADE_BAIXA = 1) AS ALERTAS_UMIDADE_BAIXA
+FROM DUAL;
