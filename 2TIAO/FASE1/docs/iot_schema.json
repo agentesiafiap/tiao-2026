@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CardioIA_IoT_Telemetry_Payload",
+  "description": "Schema de telemetria para o wearable simulado (ESP32) da Fase 3 do projeto CardioIA.",
+  "type": "object",
+  "properties": {
+    "patient_id": {
+      "description": "Identificador único estruturado do paciente.",
+      "type": "string",
+      "pattern": "^PAC-[0-9]{4}$",
+      "example": "PAC-0001"
+    },
+    "timestamp": {
+      "description": "Data e hora da medição em formato ISO 8601.",
+      "type": "string",
+      "format": "date-time",
+      "example": "2026-09-01T10:30:00Z"
+    },
+    "frequencia_cardiaca": {
+      "description": "Frequência cardíaca atual em batimentos por minuto (bpm).",
+      "type": "integer",
+      "minimum": 30,
+      "maximum": 220,
+      "example": 78
+    },
+    "pressao_arterial_sistolica": {
+      "description": "Pressão arterial sistólica em mmHg.",
+      "type": "integer",
+      "minimum": 50,
+      "maximum": 250,
+      "example": 120
+    },
+    "pressao_arterial_diastolica": {
+      "description": "Pressão arterial diastólica em mmHg.",
+      "type": "integer",
+      "minimum": 30,
+      "maximum": 150,
+      "example": 80
+    },
+    "temperatura_corporal": {
+      "description": "Temperatura corporal medida em graus Celsius.",
+      "type": "number",
+      "minimum": 34.0,
+      "maximum": 42.0,
+      "example": 36.7
+    },
+    "spo2": {
+      "description": "Saturação periférica de oxigênio (%).",
+      "type": "integer",
+      "minimum": 50,
+      "maximum": 100,
+      "example": 98
+    }
+  },
+  "required": [
+    "patient_id",
+    "timestamp",
+    "frequencia_cardiaca",
+    "pressao_arterial_sistolica",
+    "pressao_arterial_diastolica"
+  ]
+}

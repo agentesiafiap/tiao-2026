@@ -12,9 +12,11 @@
 
 ## 📚 Portfólio Acadêmico de Projetos e Soluções em IA
 
+> ⚠️ **Este README refere-se exclusivamente ao 1º ano (1TIAO) da Graduação ON em Inteligência Artificial.** O 2º ano (pasta `2TIAO`) possui conteúdo programático e integrantes de grupo distintos, com README próprio.
+
 ---
 
-## 👨‍🎓 Integrantes: 
+## 👨‍🎓 Integrantes (1º Ano): 
 - <a href="">Daniel Emilio Baião</a>
 - <a href="">Erik Criscuolo</a>
 - <a href="">Marcus Vinícius Loureiro Garcia</a> 

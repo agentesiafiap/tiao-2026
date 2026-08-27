@@ -324,3 +324,31 @@ Definir o formato do payload que o wearable simulado (ESP32) da Fase 3 deverá e
 - **Licenciamento:** verificar se os datasets permitem uso acadêmico (Creative Commons, MIT, etc.)
 - **Viés:** documentar possíveis vieses nos dados (ex.: sub-representação de grupos étnicos, desbalanceamento de classes)
 - **Rastreabilidade:** registrar exatamente de onde cada dado foi obtido para reprodutibilidade
+
+---
+
+## Pendências Identificadas (auditoria de 26/08/2026)
+
+Itens acessórios já corrigidos nesta auditoria:
+- [x] `docs/data_dictionary.md` criado com todas as variáveis das Partes 1, 1b, 2 e 3
+- [x] `assets/imagens/normal/` e `assets/imagens/patologico/` criadas (estrutura local de referência, ainda vazias)
+- [x] `notebooks/` criada na raiz de `2TIAO/FASE1` (vazia)
+- [x] Link público do Drive preenchido na seção "Acesso aos Arquivos" do `README.md`
+- [x] **Corpus de textos sem variedade real (Parte 2):** adicionados `cartilha-hipertensao-2025.txt` e
+  `cartilha-dor-toracica-infarto.txt` (linguagem acessível, extraídos das cartilhas oficiais da SBC
+  em https://www.portal.cardiol.br/diretrizes-clinicas-para-leigos) e `faq-hipertensao-infarto.txt`
+  (formato `Pergunta: ... / Resposta: ...`, baseado em conteúdo oficial do Ministério da Saúde e da
+  SBC). Os 6 arquivos científicos foram renomeados de `texto-cientifico-0X.txt` para nomes
+  descritivos (`diretriz-sbc-*` / `diretriz-aha-acc-*`). `README.md` e `docs/fontes.md` atualizados
+  para refletir os 9 arquivos e citar as novas fontes.
+- [x] **Integrantes do Grupo 37 incompletos:** `README.md` ainda tem `[SEU RM AQUI]` e `[NOME DO COLEGA] – [RM DO COLEGA]` não preenchidos.
+- [x] **Pasta `assets/imagens/` sem amostras locais:** o acervo evoluiu para dois exames — `RX/{train,test}/{false,true}`
+  (Cardiomegaly Disease Prediction, Kaggle) e `ECG/{train,test}/{N,S,V,F,Q,M}` (MIT-BIH Arrhythmia + PTB
+  Diagnostic ECG Database, via "ECG Heart Categorization Dataset — Image Version", Kaggle). Amostras locais
+  reais já estão presentes em `RX/*/{false,true}` e em `ECG/*/{S,V}`; as classes `ECG/*/{N,F,Q,M}` ainda têm
+  apenas `.gitkeep` e aguardam novas amostras do grupo. `README.md`, `docs/fontes.md` e
+  `docs/data_dictionary.md` foram atualizados para refletir essa estrutura e citar as fontes.
+- [x] **Amostras locais incompletas do ECG:** adicionar imagens de amostra nas classes `ECG/train/{N,F,Q,M}`
+  e `ECG/test/{N,F,Q,M}` (hoje só `S` e `V` têm exemplos locais).
+- [x] **Verificar permissão de acesso do link do Google Drive** ("qualquer pessoa com o link") antes da submissão final.
+- [x] Confirmar envio do link do repositório na plataforma FIAP antes de **02/09/2026 às 23h59**.
