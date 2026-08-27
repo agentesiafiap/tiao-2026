@@ -51,11 +51,35 @@ O acervo visual reúne dois tipos de exame cardiológico, organizados em `assets
 - **Raio-X Torácico (`RX/`):**
   - **Fonte:** Cardiomegaly Disease Prediction (Kaggle).
   - **Classes:** `false` (sem cardiomegalia) e `true` (com cardiomegalia), conforme a rotulagem original do dataset.
-  - **Volume:** > 5.000 imagens no acervo completo (hospedado no Drive); amostra local balanceada em `assets/imagens/RX/`.
+  - **Volume (inventário do acervo completo no Google Drive):**
+
+    | Classe | Train | Test | Total |
+    |---|---|---|---|
+    | false (sem cardiomegalia) | 2.219 | 557 | 2.776 |
+    | true (com cardiomegalia) | 2.219 | 557 | 2.776 |
+    | **Total** | **4.438** | **1.114** | **5.552** |
+
+    > Classes perfeitamente balanceadas (50/50) em ambos os splits, dispensando técnicas de balanceamento
+    > para o treinamento do classificador na Fase 4.
   - **Justificativa Clínica e de IA:** O Raio-X permite avaliar a morfologia cardíaca (como o índice cardiotorácico para detecção de cardiomegalia). Em IA, essas matrizes de pixels servirão para treinar modelos de Redes Neurais Convolucionais (CNNs) na Fase 4, automatizando a detecção de anomalias[cite: 2, 3].
 - **Eletrocardiograma em imagem (`ECG/`):**
   - **Fonte:** "ECG Heart Categorization Dataset — Image Version" (Kaggle), que combina o MIT-BIH Arrhythmia Database com o PTB Diagnostic ECG Database.
   - **Classes (taxonomia AAMI EC57 + PTB):** `N` (batimento normal), `S` (ectópico supraventricular), `V` (ectópico ventricular), `F` (fusão), `Q` (não classificável) — do MIT-BIH — e `M` (infarto do miocárdio) — do PTB Diagnostic ECG Database.
+  - **Volume (inventário do acervo completo no Google Drive):**
+
+    | Classe | Train | Test | Total |
+    |---|---|---|---|
+    | N (normal) | 75.717 | 18.958 | 94.675 |
+    | M (infarto do miocárdio) | 8.421 | 2.117 | 10.538 |
+    | Q (não classificável) | 6.431 | 1.608 | 8.039 |
+    | V (ectópico ventricular) | 5.790 | 1.447 | 7.237 |
+    | S (ectópico supraventricular) | 2.239 | 556 | 2.795 |
+    | F (fusão) | 642 | 161 | 803 |
+    | **Total** | **99.240** | **24.847** | **124.087** |
+
+    > Classes fortemente desbalanceadas (predomínio de `N`), refletindo a prevalência real de batimentos
+    > normais no MIT-BIH/PTB; a Fase 4 deverá considerar técnicas de balanceamento (undersampling,
+    > oversampling ou pesos de classe) ao treinar o classificador.
   - **Justificativa Clínica e de IA:** Permite treinar CNNs para classificação multiclasse de arritmias e infarto a partir da morfologia do traçado eletrocardiográfico, complementando o Raio-X com um exame de menor custo e uso mais frequente na triagem cardiológica.
 
 ---
@@ -63,7 +87,7 @@ O acervo visual reúne dois tipos de exame cardiológico, organizados em `assets
 ## 🏛 Governança de Dados e Viés
 A construção de soluções em saúde exige rigor técnico e ético[cite: 2, 3].
 - **Privacidade:** Todos os datasets utilizados foram desidentificados e não contêm Informações Pessoais de Saúde (PHI) expostas.
-- **Mitigação de Viés:** Reconhecemos que bases de dados históricas podem apresentar sub-representação de perfis patológicos atípicos (ex: sintomas de isquemia em mulheres). A diversidade do nosso corpus NLP e a amplitude das 5.000 imagens visam reduzir a propagação de viés discriminatório nos futuros algoritmos.
+- **Mitigação de Viés:** Reconhecemos que bases de dados históricas podem apresentar sub-representação de perfis patológicos atípicos (ex: sintomas de isquemia em mulheres). A diversidade do nosso corpus NLP e o acervo visual de ~129.600 imagens (RX + ECG, balanceado no RX e fortemente desbalanceado a favor da classe `N` no ECG) visam reduzir a propagação de viés discriminatório nos futuros algoritmos, exigindo atenção ao desbalanceamento do ECG na Fase 4.
 
 ---
 
@@ -72,9 +96,7 @@ Os conjuntos de dados (Numéricos, Temporais e Visuais), organizados conforme a 
 
 **👉 [https://drive.google.com/drive/folders/1MjRjubKeXP5wfsZqoUAp35yOG_cBH_st?usp=share_link](https://drive.google.com/drive/folders/1MjRjubKeXP5wfsZqoUAp35yOG_cBH_st?usp=share_link) 👈**
 
-*(Aviso: O link está configurado como público para garantir o acesso da banca avaliadora da FIAP[cite: 3]).*
-
 ---
 ## 👥 Grupo 78 - Integrantes
-- Hugo Rodrigues
-- Daniel Emilio Baião
+- Hugo Rodrigues - rm566891
+- Daniel Emilio Baião - rm567686

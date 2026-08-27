@@ -2,7 +2,7 @@
 
 **Curso:** IA – 2º TIAO  
 **Atividade:** Cap 1 – A Busca de Dados: Preparando o Terreno para a Inteligência Cardiológica  
-**Grupo:** 37  
+**Grupo:** 78  
 **Prazo de entrega:** Quarta-feira, 02 de setembro de 2026, às 23h59  
 
 ---
