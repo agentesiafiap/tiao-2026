@@ -1,0 +1,156 @@
+FAQ ESTRUTURADO — SINTOMAS E DÚVIDAS CARDIOLÓGICAS
+Base de conhecimento para o Assistente Cardiológico Virtual — Projeto CardioIA (Fase 5)
+
+Nota de fonte: conteúdo educativo elaborado para fins acadêmicos, com base em informações gerais
+de saúde cardiovascular de domínio público. Não substitui avaliação médica presencial. Em caso de
+emergência, procure imediatamente um serviço de saúde.
+
+Formato: cada item segue o padrão "Pergunta:" / "Resposta:" para facilitar a ingestão por
+sistemas de NLP e a construção de intents do chatbot.
+
+------------------------------------------------------------
+CATEGORIA: SINTOMAS GERAIS
+------------------------------------------------------------
+
+Pergunta: O que é dor no peito e ela sempre indica problema no coração?
+Resposta: Dor no peito é qualquer desconforto na região torácica, que pode ter origem cardíaca,
+muscular, digestiva, respiratória ou emocional. Nem toda dor no peito é cardíaca, mas dor em
+aperto, opressiva, que irradia para braço, mandíbula ou costas, associada a suor frio ou falta de
+ar, merece avaliação médica urgente.
+
+Pergunta: Sinto o coração acelerado às vezes, isso é preocupante?
+Resposta: Palpitações ocasionais, especialmente associadas a estresse, cafeína ou esforço físico,
+costumam ser benignas. Palpitações frequentes, prolongadas, ou acompanhadas de tontura, dor no
+peito ou desmaio devem ser investigadas por um cardiologista.
+
+Pergunta: Falta de ar é sempre sinal de problema cardíaco?
+Resposta: Não necessariamente. Falta de ar pode ter causas respiratórias, anêmicas, ansiosas ou
+cardíacas. Quando surge aos pequenos esforços, piora ao deitar, ou vem acompanhada de inchaço nas
+pernas, pode indicar insuficiência cardíaca e deve ser avaliada.
+
+Pergunta: O que significa sentir tontura frequente?
+Resposta: Tontura pode estar relacionada à pressão arterial baixa, arritmias, desidratação ou
+outras causas não cardíacas. Tontura associada a palpitações, dor no peito ou desmaios recorrentes
+deve ser investigada.
+
+Pergunta: Inchaço nas pernas pode ter relação com o coração?
+Resposta: Sim. O inchaço (edema) nas pernas, especialmente quando bilateral e progressivo, pode
+estar associado à insuficiência cardíaca, além de causas renais, hepáticas ou vasculares, sendo
+importante uma avaliação médica.
+
+Pergunta: Cansaço fácil ao subir escadas é normal?
+Resposta: Um certo grau de cansaço ao esforço é esperado, principalmente em pessoas sedentárias.
+Porém, uma queda progressiva na tolerância a atividades antes toleradas pode ser sinal de alerta
+cardiovascular e merece avaliação.
+
+------------------------------------------------------------
+CATEGORIA: SINAIS DE ALERTA E EMERGÊNCIA
+------------------------------------------------------------
+
+Pergunta: Quais sintomas indicam que devo procurar atendimento de emergência imediatamente?
+Resposta: Procure emergência imediatamente em caso de dor ou aperto no peito com duração maior
+que alguns minutos, dor que irradia para braço, mandíbula ou costas, falta de ar súbita e intensa,
+suor frio associado a mal-estar, desmaio, ou fraqueza súbita de um lado do corpo, dificuldade para
+falar ou entender, que também podem indicar um AVC.
+
+Pergunta: O que fazer se eu suspeitar que estou tendo um infarto?
+Resposta: Ligue imediatamente para o serviço de emergência local, mantenha-se em repouso sentado
+ou deitado, evite esforços, e, se orientado por profissional de saúde e não houver contraindicação
+conhecida, siga as orientações recebidas até a chegada do socorro.
+
+Pergunta: Quais são os sinais de alerta de um AVC?
+Resposta: Os sinais clássicos incluem fraqueza ou paralisia repentina em um lado do rosto, braço
+ou perna, dificuldade súbita para falar ou compreender, alteração visual repentina, tontura
+intensa com perda de equilíbrio e dor de cabeça súbita e muito forte. Diante desses sinais, o
+atendimento de emergência deve ser buscado imediatamente.
+
+Pergunta: Desmaio é sempre uma emergência cardíaca?
+Resposta: Nem sempre, mas desmaios recorrentes, sem causa aparente, ou associados a palpitações,
+dor no peito ou esforço físico, podem indicar arritmias graves e exigem avaliação cardiológica
+prioritária.
+
+------------------------------------------------------------
+CATEGORIA: FATORES DE RISCO E PREVENÇÃO
+------------------------------------------------------------
+
+Pergunta: Quais são os principais fatores de risco para doenças cardiovasculares?
+Resposta: Os principais fatores incluem hipertensão arterial, diabetes, colesterol elevado,
+tabagismo, obesidade, sedentarismo, histórico familiar de doença cardíaca precoce, estresse
+crônico e consumo excessivo de álcool.
+
+Pergunta: É possível prevenir doenças do coração?
+Resposta: Uma parcela significativa do risco cardiovascular é modificável por meio de alimentação
+equilibrada, atividade física regular, controle do peso, cessação do tabagismo, controle da
+pressão arterial e do colesterol, e acompanhamento médico regular.
+
+Pergunta: Histórico familiar de infarto aumenta meu risco?
+Resposta: Sim. Ter parentes de primeiro grau com doença cardíaca precoce (geralmente antes dos 55
+anos em homens e 65 anos em mulheres) é considerado fator de risco relevante e deve ser informado
+ao médico para uma avaliação de risco mais precisa.
+
+Pergunta: Colesterol alto sempre dá sintomas?
+Resposta: Não. O colesterol elevado geralmente não causa sintomas perceptíveis, sendo identificado
+apenas por exames de sangue. Por isso, exames periódicos são importantes mesmo na ausência de
+queixas.
+
+------------------------------------------------------------
+CATEGORIA: EXAMES
+------------------------------------------------------------
+
+Pergunta: Com que frequência devo medir minha pressão arterial?
+Resposta: Pessoas sem diagnóstico de hipertensão podem aferir a pressão periodicamente em
+consultas de rotina. Pacientes hipertensos costumam necessitar de monitoramento mais frequente,
+conforme orientação médica, incluindo eventualmente o uso de aparelhos domiciliares validados.
+
+Pergunta: O que é um eletrocardiograma e dói fazer o exame?
+Resposta: O eletrocardiograma é um exame não invasivo e indolor que registra a atividade elétrica
+do coração por meio de eletrodos posicionados na pele, ajudando a identificar arritmias e sinais
+de sofrimento cardíaco.
+
+Pergunta: Preciso estar em jejum para exames de sangue do coração?
+Resposta: Alguns exames, como perfil lipídico e glicemia, costumam exigir jejum, geralmente entre
+8 e 12 horas, mas isso pode variar conforme o laboratório e a prescrição médica, devendo sempre
+ser confirmado previamente.
+
+------------------------------------------------------------
+CATEGORIA: TRATAMENTO E MEDICAÇÃO
+------------------------------------------------------------
+
+Pergunta: Posso parar de tomar meu remédio para pressão quando ela normalizar?
+Resposta: Não é recomendado interromper a medicação por conta própria. A normalização da pressão
+frequentemente reflete o efeito do tratamento em curso, e a suspensão sem orientação médica pode
+levar a nova elevação da pressão e aumento do risco cardiovascular.
+
+Pergunta: É normal esquecer doses do remédio às vezes? O que fazer?
+Resposta: Esquecimentos ocasionais acontecem, mas a adesão regular é importante para o controle
+adequado. Em caso de dúvida sobre o que fazer após esquecer uma dose, o ideal é seguir a orientação
+específica do médico ou farmacêutico responsável, sem duplicar doses por conta própria.
+
+Pergunta: Remédios para o coração têm efeitos colaterais?
+Resposta: Como qualquer medicamento, podem ocorrer efeitos colaterais, que variam conforme a
+classe terapêutica e o paciente. Qualquer efeito incômodo ou inesperado deve ser relatado ao
+médico, que poderá avaliar ajuste de dose ou troca de medicação.
+
+------------------------------------------------------------
+CATEGORIA: ESTILO DE VIDA
+------------------------------------------------------------
+
+Pergunta: Quanto de sal posso consumir por dia?
+Resposta: A recomendação geral para a população é limitar o consumo de sódio a cerca de 2 gramas
+por dia (o equivalente a aproximadamente 5 gramas de sal de cozinha), o que costuma exigir atenção
+especial a alimentos industrializados e processados.
+
+Pergunta: Que tipo de atividade física é recomendada para a saúde do coração?
+Resposta: De forma geral, recomenda-se a prática de pelo menos 150 minutos semanais de atividade
+aeróbica moderada, como caminhada, ciclismo ou natação, distribuídos ao longo da semana, sempre
+respeitando limitações individuais e orientação médica prévia em caso de doença cardíaca conhecida.
+
+Pergunta: Álcool pode ser consumido por quem tem problema no coração?
+Resposta: O consumo de álcool deve ser discutido individualmente com o médico, já que pode
+interferir na pressão arterial, no ritmo cardíaco e na interação com medicamentos, sendo
+recomendada moderação ou abstinência conforme o quadro clínico.
+
+Pergunta: Estresse realmente afeta o coração?
+Resposta: Sim. O estresse crônico está associado a elevação da pressão arterial, alterações no
+ritmo cardíaco e a comportamentos de risco (como má alimentação e sedentarismo), sendo importante
+o desenvolvimento de estratégias de manejo do estresse como parte do cuidado cardiovascular.

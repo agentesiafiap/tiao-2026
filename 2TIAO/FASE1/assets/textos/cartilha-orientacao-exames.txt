@@ -1,0 +1,163 @@
+CARTILHA DE ORIENTAÇÃO SOBRE EXAMES CARDIOLÓGICOS
+Material educativo para pacientes — Projeto CardioIA
+
+Nota de fonte: conteúdo educativo elaborado para fins acadêmicos, em linguagem acessível, com
+base em informações gerais de domínio público sobre exames cardiológicos. Não substitui a
+orientação da sua equipe de saúde, que deve sempre ser consultada sobre o preparo específico de
+cada exame.
+
+Você foi encaminhado para realizar algum exame do coração? Esta cartilha explica, de forma
+simples, o que é cada exame, para que ele serve e como se preparar.
+
+============================================================
+1. ELETROCARDIOGRAMA (ECG)
+============================================================
+
+O que é: um exame rápido e indolor que registra a atividade elétrica do coração por meio de
+adesivos (eletrodos) colados na pele do peito, braços e pernas.
+
+Para que serve: ajudar a identificar arritmias, sinais de sofrimento do músculo cardíaco e
+alterações no ritmo do coração.
+
+Como se preparar: não é necessário jejum. Vista roupas confortáveis, fáceis de remover na região
+do tórax. Evite usar cremes ou óleos na pele no dia do exame.
+
+O que esperar: você ficará deitado, parado e relaxado por alguns minutos enquanto os eletrodos
+captam os sinais elétricos do coração. O exame não causa nenhum choque ou desconforto.
+
+============================================================
+2. ECOCARDIOGRAMA
+============================================================
+
+O que é: um exame de ultrassom que permite visualizar a estrutura e o funcionamento do coração em
+tempo real, incluindo o tamanho das câmaras cardíacas e o funcionamento das válvulas.
+
+Para que serve: avaliar a força de bombeamento do coração, identificar problemas nas válvulas e
+detectar outras alterações estruturais.
+
+Como se preparar: geralmente não exige jejum nem preparo especial, mas confirme sempre com o
+local do exame, pois algumas variações do exame podem ter orientações específicas.
+
+O que esperar: um gel é aplicado na pele do peito, e um aparelho (transdutor) é passado sobre a
+região para captar as imagens. O exame é indolor e costuma durar entre 30 e 45 minutos.
+
+============================================================
+3. TESTE ERGOMÉTRICO (TESTE DE ESFORÇO)
+============================================================
+
+O que é: um exame que avalia o comportamento do coração durante o esforço físico, geralmente
+realizado em esteira ou bicicleta ergométrica.
+
+Para que serve: identificar sinais de sofrimento do coração durante o esforço, avaliar arritmias
+induzidas por atividade física e ajudar a definir a capacidade física do paciente.
+
+Como se preparar: use roupas e calçados confortáveis para caminhar ou pedalar. Pode ser
+recomendado um jejum leve (geralmente de 2 a 3 horas antes) e a suspensão temporária de alguns
+medicamentos — sempre confirme essas orientações com o médico solicitante.
+
+O que esperar: você caminhará ou pedalará com intensidade crescente, enquanto sua pressão arterial
+e o traçado do eletrocardiograma são monitorados continuamente.
+
+============================================================
+4. HOLTER 24 HORAS
+============================================================
+
+O que é: um pequeno aparelho portátil que registra continuamente o ritmo cardíaco ao longo de 24
+horas (ou mais, em alguns casos), enquanto você realiza suas atividades normais.
+
+Para que serve: identificar arritmias que não aparecem em um eletrocardiograma comum, por
+ocorrerem de forma intermitente.
+
+Como se preparar: não exige jejum. Vista roupas que facilitem a colocação dos eletrodos no peito,
+e evite tomar banho com o aparelho instalado (a menos que orientado o contrário).
+
+O que esperar: você usará o aparelho normalmente durante suas atividades diárias, anotando em um
+diário fornecido os sintomas que sentir e o horário em que ocorreram, para comparação posterior
+com o registro do exame.
+
+============================================================
+5. MAPA (MONITORIZAÇÃO AMBULATORIAL DA PRESSÃO ARTERIAL)
+============================================================
+
+O que é: um exame que mede a pressão arterial automaticamente em intervalos regulares ao longo de
+24 horas, incluindo durante o sono.
+
+Para que serve: avaliar o comportamento da pressão arterial ao longo do dia e da noite, ajudando
+a confirmar o diagnóstico de hipertensão e avaliar a eficácia do tratamento.
+
+Como se preparar: não exige jejum. Use roupas confortáveis, com mangas largas, para facilitar a
+colocação do manguito no braço.
+
+O que esperar: o manguito insufla automaticamente em intervalos programados, podendo causar um
+leve desconforto momentâneo. É importante manter o braço relaxado e parado durante cada medição.
+
+============================================================
+6. EXAMES DE SANGUE (PERFIL LIPÍDICO, GLICEMIA E MARCADORES CARDÍACOS)
+============================================================
+
+O que é: coleta de sangue para avaliar colesterol total e frações, triglicerídeos, glicemia e, em
+situações específicas, marcadores de lesão cardíaca como troponina ou BNP.
+
+Para que serve: avaliar fatores de risco cardiovascular (colesterol, glicemia) e, em contextos de
+emergência, ajudar a identificar lesão aguda do músculo cardíaco.
+
+Como se preparar: exames de colesterol e glicemia costumam exigir jejum de 8 a 12 horas, mas
+sempre confirme com o laboratório, pois protocolos podem variar. Mantenha-se hidratado com água
+antes da coleta, salvo orientação contrária.
+
+O que esperar: uma coleta de sangue rápida, geralmente do braço, com desconforto mínimo e breve.
+
+============================================================
+7. RAIO-X DE TÓRAX
+============================================================
+
+O que é: um exame de imagem que utiliza radiação em baixa dose para visualizar o coração, os
+pulmões e as estruturas do tórax.
+
+Para que serve: avaliar o tamanho e o formato do coração (por exemplo, sinais de aumento cardíaco)
+e identificar alterações pulmonares associadas a doenças cardíacas, como acúmulo de líquido.
+
+Como se preparar: não exige jejum. Pode ser solicitado que você remova objetos metálicos, como
+colares, e vista um avental específico durante o exame.
+
+O que esperar: você ficará em pé (ou deitado, conforme orientação), prendendo a respiração por
+alguns segundos enquanto a imagem é capturada. O exame é rápido e indolor.
+
+============================================================
+8. CATETERISMO CARDÍACO (ANGIOGRAFIA CORONÁRIA)
+============================================================
+
+O que é: um exame invasivo em que um pequeno cateter é introduzido por uma artéria (geralmente no
+punho ou na virilha) até o coração, permitindo a injeção de contraste para visualizar as artérias
+coronárias.
+
+Para que serve: identificar obstruções nas artérias do coração, orientando decisões sobre
+tratamento clínico, angioplastia ou cirurgia de revascularização.
+
+Como se preparar: costuma exigir jejum, suspensão temporária de alguns medicamentos e exames
+prévios de sangue — siga rigorosamente as orientações da equipe médica e de enfermagem, pois esse
+preparo é mais detalhado que o dos exames não invasivos.
+
+O que esperar: o procedimento é realizado com anestesia local, e você pode sentir uma leve pressão
+no local da punção. Após o exame, é comum um período de repouso e observação antes da alta.
+
+============================================================
+9. PERGUNTAS FREQUENTES SOBRE EXAMES
+============================================================
+
+Pergunta: Posso dirigir sozinho para fazer os exames?
+Resposta: Para a maioria dos exames não invasivos (ECG, ecocardiograma, raio-X, exames de sangue),
+sim. Já para exames invasivos, como o cateterismo, geralmente é necessário acompanhante, conforme
+orientação da equipe do local.
+
+Pergunta: Posso tomar meus remédios normalmente no dia do exame?
+Resposta: Depende do exame. Alguns exigem suspensão temporária de determinados medicamentos.
+Sempre confirme especificamente com o médico solicitante ou com o local do exame.
+
+Pergunta: Os resultados demoram muito para sair?
+Resposta: O prazo varia conforme o tipo de exame e o serviço de saúde. Exames simples, como
+eletrocardiograma, costumam ter resultado imediato; outros, como exames laboratoriais mais
+complexos, podem levar alguns dias.
+
+Lembre-se: leve sempre um documento de identificação e o pedido médico no dia do exame, e, em
+caso de dúvida sobre o preparo, entre em contato com o local com antecedência.

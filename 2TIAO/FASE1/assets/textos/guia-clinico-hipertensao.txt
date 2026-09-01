@@ -1,0 +1,165 @@
+GUIA CLÍNICO DE HIPERTENSÃO ARTERIAL SISTÊMICA
+Material de referência técnica — Projeto CardioIA
+
+Nota de fonte: conteúdo educativo elaborado para fins acadêmicos, com base em diretrizes de
+saúde cardiovascular de domínio público (Sociedade Brasileira de Cardiologia, Ministério da
+Saúde, Organização Mundial da Saúde) e na literatura médica geral sobre o tema. Não substitui
+diretrizes clínicas oficiais nem o julgamento médico individualizado.
+
+============================================================
+1. DEFINIÇÃO E CLASSIFICAÇÃO
+============================================================
+
+A hipertensão arterial sistêmica (HAS) é uma condição clínica multifatorial caracterizada por
+elevação sustentada dos níveis pressóricos, definida na maioria das diretrizes como pressão
+arterial sistólica (PAS) igual ou superior a 140 mmHg e/ou pressão arterial diastólica (PAD)
+igual ou superior a 90 mmHg, aferidas em consultório, em pelo menos duas ocasições distintas.
+
+Classificação usual da pressão arterial em adultos:
+- Pressão arterial ótima: PAS < 120 mmHg e PAD < 80 mmHg.
+- Pressão arterial normal: PAS entre 120-129 mmHg e/ou PAD entre 80-84 mmHg.
+- Pré-hipertensão (limítrofe): PAS entre 130-139 mmHg e/ou PAD entre 85-89 mmHg.
+- Hipertensão estágio 1: PAS entre 140-159 mmHg e/ou PAD entre 90-99 mmHg.
+- Hipertensão estágio 2: PAS entre 160-179 mmHg e/ou PAD entre 100-109 mmHg.
+- Hipertensão estágio 3: PAS ≥ 180 mmHg e/ou PAD ≥ 110 mmHg.
+- Hipertensão sistólica isolada: PAS ≥ 140 mmHg com PAD < 90 mmHg, comum em idosos devido
+  ao enrijecimento arterial.
+
+Além da aferição em consultório, recomenda-se o uso de métodos complementares para confirmação
+diagnóstica e exclusão de efeito do avental branco ou hipertensão mascarada:
+- MAPA (Monitorização Ambulatorial da Pressão Arterial) de 24 horas.
+- MRPA (Monitorização Residencial da Pressão Arterial), com aferições domiciliares padronizadas.
+
+============================================================
+2. EPIDEMIOLOGIA E FATORES DE RISCO
+============================================================
+
+A hipertensão arterial é um dos principais fatores de risco modificáveis para doença
+cardiovascular, estando associada a maior incidência de infarto agudo do miocárdio, acidente
+vascular cerebral (AVC), insuficiência cardíaca, doença renal crônica e retinopatia hipertensiva.
+Estima-se que cerca de um em cada três a quatro adultos apresente hipertensão, com prevalência
+crescente com o envelhecimento da população.
+
+Fatores de risco não modificáveis:
+- Idade avançada.
+- Histórico familiar de hipertensão ou doença cardiovascular precoce.
+- Sexo (predomínio variável conforme a faixa etária).
+- Etnia (maior prevalência e gravidade descritas em determinados grupos populacionais).
+
+Fatores de risco modificáveis:
+- Excesso de peso e obesidade, especialmente obesidade central.
+- Sedentarismo.
+- Dieta rica em sódio e pobre em potássio, frutas e vegetais.
+- Consumo excessivo de álcool.
+- Tabagismo.
+- Estresse crônico e privação de sono.
+- Resistência à insulina e diabetes mellitus.
+- Dislipidemia associada.
+
+============================================================
+3. FISIOPATOLOGIA RESUMIDA
+============================================================
+
+A pressão arterial resulta do produto entre o débito cardíaco e a resistência vascular
+periférica. Na hipertensão primária (essencial), que responde pela maioria dos casos, não há uma
+causa única identificável, mas sim uma combinação de fatores genéticos, neuro-hormonais
+(ativação do sistema renina-angiotensina-aldosterona e do sistema nervoso simpático), disfunção
+endotelial, rigidez arterial e influências ambientais (dieta, atividade física, estresse).
+
+A hipertensão secundária, menos frequente, decorre de uma causa identificável e potencialmente
+tratável, como doença renal parenquimatosa, estenose de artéria renal, hiperaldosteronismo
+primário, feocromocitoma, apneia obstrutiva do sono, doenças da tireoide ou uso de determinadas
+substâncias e medicamentos. A suspeita de hipertensão secundária aumenta em casos de início
+abrupto, hipertensão grave ou resistente, e pacientes jovens sem fatores de risco típicos.
+
+A elevação crônica da pressão arterial promove remodelamento vascular e cardíaco, favorecendo
+hipertrofia ventricular esquerda, rigidez arterial progressiva e lesão de órgãos-alvo (coração,
+rins, cérebro, retina), o que fundamenta a importância do diagnóstico e controle precoces.
+
+============================================================
+4. DIAGNÓSTICO E METAS TERAPÊUTICAS
+============================================================
+
+O diagnóstico baseia-se na aferição correta da pressão arterial, com técnica padronizada
+(paciente em repouso, posição sentada, manguito adequado ao braço, média de duas ou mais
+medidas), confirmada em visitas subsequentes ou por MAPA/MRPA quando indicado.
+
+Avaliação complementar recomendada ao diagnóstico:
+- Exames laboratoriais: glicemia, perfil lipídico, função renal (ureia, creatinina, taxa de
+  filtração glomerular estimada), eletrólitos, exame de urina.
+- Eletrocardiograma de repouso, para avaliação de hipertrofia ventricular e arritmias.
+- Avaliação de risco cardiovascular global, considerando idade, sexo, tabagismo, diabetes,
+  dislipidemia e histórico familiar.
+
+Metas pressóricas geralmente recomendadas para a maioria dos adultos em tratamento situam-se
+abaixo de 130/80 mmHg, podendo ser individualizadas conforme idade, comorbidades e tolerância ao
+tratamento, especialmente em idosos frágeis ou pacientes com múltiplas comorbidades.
+
+============================================================
+5. TRATAMENTO NÃO FARMACOLÓGICO
+============================================================
+
+As medidas de mudança de estilo de vida são recomendadas para todos os pacientes hipertensos,
+independentemente da necessidade de tratamento farmacológico associado:
+- Redução do consumo de sódio (idealmente abaixo de 2 g de sódio por dia).
+- Padrão alimentar rico em frutas, vegetais, grãos integrais e laticínios com baixo teor de
+  gordura, com redução de gorduras saturadas.
+- Prática regular de atividade física aeróbica (pelo menos 150 minutos por semana de intensidade
+  moderada).
+- Perda de peso em pacientes com sobrepeso ou obesidade.
+- Moderação no consumo de álcool.
+- Cessação do tabagismo.
+- Técnicas de controle do estresse e melhora da qualidade do sono.
+
+============================================================
+6. TRATAMENTO FARMACOLÓGICO (CLASSES GERAIS)
+============================================================
+
+A escolha da classe terapêutica considera comorbidades, lesão de órgão-alvo, idade e tolerância
+individual. As principais classes utilizadas incluem:
+- Diuréticos tiazídicos.
+- Bloqueadores dos canais de cálcio.
+- Inibidores da enzima conversora de angiotensina (IECA).
+- Bloqueadores do receptor de angiotensina II (BRA).
+- Betabloqueadores, com indicação mais específica em determinadas condições associadas (por
+  exemplo, doença coronariana ou insuficiência cardíaca).
+
+Frequentemente é necessária a combinação de duas ou mais classes para atingir a meta pressórica,
+especialmente em hipertensão estágio 2 ou superior. O ajuste terapêutico deve ser individualizado
+e acompanhado por profissional de saúde, com atenção a efeitos adversos e interações
+medicamentosas.
+
+============================================================
+7. COMPLICAÇÕES
+============================================================
+
+O controle inadequado da pressão arterial ao longo do tempo está associado a:
+- Doença arterial coronariana e infarto agudo do miocárdio.
+- Acidente vascular cerebral isquêmico ou hemorrágico.
+- Insuficiência cardíaca com fração de ejeção reduzida ou preservada.
+- Doença renal crônica e progressão para insuficiência renal.
+- Retinopatia hipertensiva, com risco de comprometimento visual.
+- Aneurisma e dissecção de aorta, em casos de hipertensão grave não controlada.
+
+============================================================
+8. SITUAÇÕES ESPECIAIS
+============================================================
+
+Gestantes: a hipertensão na gestação exige monitoramento diferenciado, com atenção a quadros de
+pré-eclâmpsia, e uso de medicamentos considerados seguros para a gestação, evitando classes
+contraindicadas nesse período.
+
+Idosos: recomenda-se cautela na velocidade de redução pressórica, com atenção a hipotensão
+postural, e individualização de metas considerando fragilidade e comorbidades.
+
+Diabéticos e pacientes com doença renal crônica: costuma-se priorizar classes com potencial
+efeito protetor renal, associadas a monitoramento laboratorial mais frequente.
+
+============================================================
+9. REFERÊNCIAS GERAIS
+============================================================
+
+Este material foi elaborado com base em diretrizes de sociedades médicas de cardiologia e em
+publicações de saúde pública amplamente disponíveis sobre hipertensão arterial sistêmica, com
+finalidade exclusivamente acadêmica no contexto do Projeto CardioIA (Fase 1 — corpus textual
+para módulos de Processamento de Linguagem Natural).

@@ -50,3 +50,15 @@ vs. leigo) e treinar o assistente virtual a se comunicar com o público geral:
     https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hipertensao
     - *Uso:* Base, junto com as fontes SBC acima, para o `faq-hipertensao-infarto.txt`
       (assets/textos/), reestruturado no formato Pergunta/Resposta pelo grupo.
+
+### Nota de transparência — conteúdo gerado localmente
+
+Os arquivos `guia-clinico-hipertensao.txt`, `faq-sintomas-e-cuidados-cardiologicos.txt`,
+`cartilha-orientacao-diaria.txt` e `cartilha-orientacao-exames.txt` (assets/textos/) são
+**conteúdo educativo elaborado pelo grupo para fins acadêmicos**, com base em conhecimento geral
+de saúde cardiovascular de domínio público, e não foram extraídos de um documento oficial
+específico e citável (cada arquivo traz sua própria nota de fonte/limitação no cabeçalho). Eles
+complementam — sem duplicar — o material oficial (SBC/Ministério da Saúde) já referenciado acima,
+ampliando a variedade de registros do corpus (guia técnico intermediário, FAQ mais amplo de
+sintomas, cartilha de rotina diária e cartilha de exames) para treinamento do assistente virtual
+(Fase 5). Não substituem diretrizes clínicas oficiais nem orientação médica individualizada.

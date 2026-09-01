@@ -29,7 +29,7 @@ Nesta Fase 1, atuamos como cientistas de dados hospitalares com o objetivo de co
 - **Justificativa Clínica e de IA:** Essencial para a Fase 6 (Previsão de Crises com IA)[cite: 2, 3]. Simula a telemetria contínua de sinais vitais, registrando o agravamento progressivo que antecede um evento crítico, fornecendo o substrato vetorial para treinamento de redes recorrentes (como LSTM).
 
 ### Parte 2: Dados Textuais (NLP)
-O corpus de texto foi estruturado com 9 documentos em formato `.txt`, abrigados na pasta `assets/textos/`[cite: 3].
+O corpus de texto foi estruturado com 13 documentos em formato `.txt`, abrigados na pasta `assets/textos/`[cite: 3].
 - **Conteúdo:**
   1. `diretriz-sbc-sindrome-coronariana-cronica-2025.txt` — Diretriz de Síndrome Coronariana Crônica (SBC).
   2. `diretriz-sbc-hipertensao-arterial-2025.txt` — Diretriz Brasileira de Hipertensão Arterial (SBC).
@@ -41,8 +41,20 @@ O corpus de texto foi estruturado com 9 documentos em formato `.txt`, abrigados 
      linguagem acessível ("mitos e fatos") da diretriz SBC de hipertensão, para o público leigo.
   8. Cartilha de Orientação ao Paciente — Sinais de Infarto (`cartilha-dor-toracica-infarto.txt`),
      infográfico da SBC sobre sinais de alerta de dor torácica/infarto.
-  9. FAQ Estruturado (`faq-hipertensao-infarto.txt`), no formato `Pergunta: ... / Resposta: ...`,
-     construído a partir de conteúdo oficial do Ministério da Saúde e da SBC.
+  9. FAQ Estruturado — Hipertensão e Infarto (`faq-hipertensao-infarto.txt`), no formato
+     `Pergunta: ... / Resposta: ...`, construído a partir de conteúdo oficial do Ministério da Saúde e da SBC.
+  10. Guia Clínico de Hipertensão (`guia-clinico-hipertensao.txt`), resumo técnico de referência (definição,
+      fisiopatologia, diagnóstico, tratamento) em registro intermediário entre a diretriz científica e a cartilha.
+  11. FAQ Estruturado — Sintomas e Cuidados Cardiológicos (`faq-sintomas-e-cuidados-cardiologicos.txt`), no
+      formato `Pergunta: ... / Resposta: ...`, cobrindo sintomas gerais, sinais de emergência, fatores de
+      risco, exames, tratamento e estilo de vida.
+  12. Cartilha de Orientação Diária (`cartilha-orientacao-diaria.txt`), dicas de rotina (alimentação,
+      atividade física, uso de medicação, monitoramento em casa, sono e bem-estar emocional).
+  13. Cartilha de Orientação de Exames (`cartilha-orientacao-exames.txt`), explicação em linguagem acessível
+      de exames cardiológicos comuns (ECG, ecocardiograma, teste ergométrico, Holter, MAPA, cateterismo).
+
+  > Os itens 10–13 são conteúdo educativo elaborado pelo grupo para fins acadêmicos (não extraídos de um
+  > documento oficial específico) — ver nota de transparência em [docs/fontes.md](docs/fontes.md).
 - **Justificativa Clínica e de IA:** A vasta maioria do histórico do paciente reside em textos não estruturados. O arquivo de FAQ é a base direta exigida para o treinamento do assistente cardiológico virtual (chatbot) da Fase 5[cite: 2, 3]. As cartilhas, em linguagem acessível, treinam o modelo a se comunicar com o público leigo, enquanto as diretrizes científicas servem para Extração de Entidades Nomeadas (NER) e Análise de Sentimentos.
 
 ### Parte 3: Dados Visuais (Visão Computacional)
@@ -87,7 +99,7 @@ O acervo visual reúne dois tipos de exame cardiológico, organizados em `assets
 ## 🏛 Governança de Dados e Viés
 A construção de soluções em saúde exige rigor técnico e ético[cite: 2, 3].
 - **Privacidade:** Todos os datasets utilizados foram desidentificados e não contêm Informações Pessoais de Saúde (PHI) expostas.
-- **Mitigação de Viés:** Reconhecemos que bases de dados históricas podem apresentar sub-representação de perfis patológicos atípicos (ex: sintomas de isquemia em mulheres). A diversidade do nosso corpus NLP e o acervo visual de ~129.600 imagens (RX + ECG, balanceado no RX e fortemente desbalanceado a favor da classe `N` no ECG) visam reduzir a propagação de viés discriminatório nos futuros algoritmos, exigindo atenção ao desbalanceamento do ECG na Fase 4.
+- **Mitigação de Viés:** Reconhecemos que bases de dados históricas podem apresentar sub-representação de perfis patológicos atípicos (ex: sintomas de isquemia em mulheres). A diversidade do nosso corpus NLP e o acervo visual de ~129.600 imagens (RX + ECG, balanceado no RX e fortemente desbalanceado a favor da classe `N` no ECG) visam reduzir a propagação de viés discriminatório nos futuros algoritmos, exigindo atenção ao desbalanceamento do ECG na Fase 4. Em particular, a sub-representação das classes minoritárias (`F`, `S`, `V`, `Q`, `M`) frente à predominância de `N` traz o risco de **viés diagnóstico**: um classificador treinado sem correção de balanceamento tende a ter alto recall para batimentos normais e baixo recall para arritmias raras (ex: fusão `F`), justamente os casos clinicamente mais críticos de não deixar passar despercebidos.
 
 ---
 
