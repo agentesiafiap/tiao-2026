@@ -103,7 +103,17 @@ A construção de soluções em saúde exige rigor técnico e ético[cite: 2, 3]
 
 ---
 
-## 🔗 Acesso aos Arquivos e Datasets Completos
+## � Adendo Pós-Feedback do Professor (08/09/2026)
+
+Esta seção foi adicionada **após** a avaliação do professor (nota 17.5/18), para registrar esclarecimentos pontuais sem reescrever o conteúdo original já corrigido. Ver `docs/avaliacao_do_professor.md` para o feedback completo.
+
+- **Sobre "diversidade/volume reduz viés":** a frase original na seção de Governança pode induzir a uma conclusão equivocada. Volume e diversidade de dados **não eliminam** viés de origem ou de representatividade — eles apenas ampliam a cobertura de casos observados. Um corpus grande construído a partir de fontes já enviesadas (geográfica, demográfica ou clinicamente) permanece enviesado, independentemente do número de documentos ou imagens. A mitigação real de viés depende de auditoria da composição das fontes e de técnicas específicas (reamostragem, ponderação, curadoria), não do tamanho do acervo.
+- **Sobre o balanceamento 51,3%/48,7% do `diagnostico`:** esse equilíbrio é uma característica da **curadoria** do Heart Disease Dataset (UCI/Kaggle) para fins didáticos, e **não reflete a prevalência real** de doença cardíaca na população geral. Um modelo treinado nessa base não deve ser interpretado como calibrado para a prevalência populacional; isso deverá ser tratado explicitamente na Fase 2 (ex.: recalibração de probabilidade ou ajuste de limiar de decisão).
+- **Sobre os marcadores `[cite: 2]`/`[cite: 3]`:** são resíduos de um processo de redação assistida por IA e não correspondem a uma lista bibliográfica formal neste documento. As fontes reais de cada dataset e diretriz estão consolidadas em [`docs/fontes.md`](docs/fontes.md); esses marcadores devem ser desconsiderados como citação e serão removidos em uma revisão futura do texto original.
+
+---
+
+## �🔗 Acesso aos Arquivos e Datasets Completos
 Os conjuntos de dados (Numéricos, Temporais e Visuais), organizados conforme a arquitetura proposta, excedem os limites de armazenamento padrão e estão hospedados publicamente no link abaixo:
 
 **👉 [https://drive.google.com/drive/folders/1MjRjubKeXP5wfsZqoUAp35yOG_cBH_st?usp=share_link](https://drive.google.com/drive/folders/1MjRjubKeXP5wfsZqoUAp35yOG_cBH_st?usp=share_link) 👈**
