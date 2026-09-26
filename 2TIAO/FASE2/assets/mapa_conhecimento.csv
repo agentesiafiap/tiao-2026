@@ -1,0 +1,33 @@
+sintoma_1,sintoma_2,doenca_associada
+dor no peito,aperto no tórax,Infarto
+dor no peito que irradia para o braço,dor no braço esquerdo,Infarto
+suor frio,mal-estar súbito,Infarto
+dor no peito intensa,dor opressiva no tórax,Infarto
+dor no peito com falta de ar,aperto no peito com falta de ar,Infarto
+desconforto no peito ao esforço,dor no peito ao subir escadas,Angina
+aperto no peito que alivia com repouso,dor que passa ao descansar,Angina
+falta de ar ao caminhar,cansaço ao caminhar,Angina
+dor no peito leve e passageira,desconforto torácico leve,Angina
+aperto no peito ao caminhar rápido,dor no peito ao esforço físico,Angina
+cansaço constante,fadiga,Insuficiência Cardíaca
+inchaço nas pernas,pernas inchadas à noite,Insuficiência Cardíaca
+falta de ar ao deitar,falta de ar deitado,Insuficiência Cardíaca
+cansaço aos pequenos esforços,cansaço fácil,Insuficiência Cardíaca
+inchaço no tornozelo,pés inchados,Insuficiência Cardíaca
+palpitações,coração acelerado,Arritmia
+coração dispara,coração disparado,Arritmia
+tontura com palpitação,tontura após palpitação,Arritmia
+desmaio recorrente,quase desmaiar,Arritmia
+sensação de falha no coração,coração batendo irregular,Arritmia
+dor de cabeça frequente,dor de cabeça ao acordar,Hipertensão
+zumbido no ouvido,zumbido constante,Hipertensão
+visão embaçada,vista embaçada,Hipertensão
+tontura frequente,tontura ao levantar,Hipertensão
+sangramento nasal,sangramento pelo nariz,Hipertensão
+fraqueza de um lado do corpo,fraqueza súbita no braço,AVC
+dificuldade para falar,fala enrolada,AVC
+boca torta,rosto caído de um lado,AVC
+visão turva súbita,perda súbita de visão,AVC
+dor de cabeça súbita intensa,pior dor de cabeça da vida,AVC
+desconforto no peito,incômodo no peito,Angina
+falta de ar,cansaço para dormir,Insuficiência Cardíaca
