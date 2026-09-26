@@ -30,7 +30,7 @@ Esses arquivos ajudam a manter consistência na linguagem dos novos insumos, mas
 
 ## 3. Fontes dos insumos novos
 
-Os insumos novos da Fase 2 serão produzidos internamente pelo grupo, com base em:
+Os insumos novos da Fase 2 foram produzidos internamente pelo grupo, com base em:
 
 - vocabulário clínico e sinais de alerta dos materiais da Fase 1;
 - variações de linguagem em primeira pessoa para simular relatos de pacientes;
@@ -40,9 +40,10 @@ Os insumos novos da Fase 2 serão produzidos internamente pelo grupo, com base e
 
 Mesmo sendo um estudo acadêmico e simulado, o projeto reconhece que dados clínicos reais exigem cuidado. A estrutura adotada nesta fase é uma simplificação didática e não deve ser interpretada como ferramenta de decisão médica. O uso de palavras-chave e regras simples também tem limitações, especialmente em cenários de saúde, onde contextualização, viés de amostragem e falso negativo podem afetar resultados.
 
-## 5. Status da Fase 0
+## 5. Insumos efetivamente gerados
 
-- Estrutura de pastas da Fase 2 validada.
-- Auditoria dos insumos da Fase 1 concluída.
-- Decisão de gerar insumos novos formalizada.
-- Fase 0 concluída sem recriar diretórios que já existiam manualmente.
+| Arquivo | Conteúdo |
+|---|---|
+| `assets/frases_sintomas.txt` | 10 frases de pacientes, cobrindo 6 doenças (Infarto, Angina, Insuficiência Cardíaca, Arritmia, Hipertensão, AVC) |
+| `assets/mapa_conhecimento.csv` | 32 linhas `sintoma_1,sintoma_2,doenca_associada` |
+| `assets/base_risco.csv` | 60 frases rotuladas, balanceadas 30 alto risco / 30 baixo risco, incluindo ~13% de casos ambíguos propositais |
