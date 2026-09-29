@@ -15,17 +15,27 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 FRASES_PATH = BASE_DIR / "assets" / "frases_sintomas.txt"
 MAPA_PATH = BASE_DIR / "assets" / "mapa_conhecimento.csv"
 
+STOP_WORDS = {
+    "o", "a", "os", "as", "um", "uma", "uns", "umas", 
+    "de", "do", "da", "dos", "das", "em", "no", "na", "nos", "nas", 
+    "por", "para", "com", "sem", "e", "ou", "mas", "que", "se"
+}
+
 
 def normalizar(texto: str) -> str:
-    """Remove acentos e caixa para tornar o matching robusto."""
+    """Remove acentos e converte para minúsculas."""
     texto = texto.lower()
     texto = unicodedata.normalize("NFKD", texto)
     return "".join(c for c in texto if not unicodedata.combining(c))
 
-
 def tokenizar(texto: str) -> set[str]:
-    """Converte a frase em um conjunto de palavras normalizadas, ignorando pontuação."""
-    return set(re.findall(r"\w+", normalizar(texto)))
+    """
+    Converte a frase em um conjunto de palavras normalizadas, 
+    ignorando pontuações e filtrando as stop words.
+    """
+    palavras = re.findall(r"\w+", normalizar(texto))
+    # Retorna apenas as palavras que NÃO estão na lista de STOP_WORDS
+    return set(p for p in palavras if p not in STOP_WORDS)
 
 
 def carregar_mapa_conhecimento(caminho: Path) -> list[dict]:
