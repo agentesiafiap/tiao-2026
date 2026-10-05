@@ -55,7 +55,7 @@ Os insumos da Fase 1 (dataset numérico categórico e corpus de textos/diretrize
 
 ## Vídeo de Demonstração
 
-📺 [Link do vídeo no YouTube (não listado)] — *a incluir após a gravação*
+📺 https://youtu.be/mUXxJTowOvs
 
 ---
 
